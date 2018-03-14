@@ -1,7 +1,7 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: A Template for IOOS Documentation GitHub Pages
+topnav_title: MBON Portal Documentation Home
 # this appears on the top navigation bar next to the home button; replace the value with your site name
 
 site_title: IOOS GitHub Documentation
@@ -137,11 +137,11 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # EDIT HERE! Added settings for IOOS (replace 'ioos-documentation-jekyll-skeleton' with your GitHub repo name):
 url                      : "https://ioos.github.io"
 
-baseurl                  : "/your-documentation-repo-name"
+baseurl                  : "/mbon-docs"
 
-repository               : "ioos/documentation-theme-jekyll"
+repository               : "ioos/mbon-docs"
 
-github_editme_path       : "ioos/your-documentation-repo-name/blob/gh-pages/_docs"
+github_editme_path       : "ioos/mbon-docs/blob/gh-pages/_docs"
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 #Setup/config for 'ioos_jekyll_theme' git submodule:

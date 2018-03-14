@@ -2,7 +2,7 @@
 
 entries:
 - title: sidebar
-  product: "The text that appear on top of the side menu"
+  product: "MBON Portal Documentation"
   levels: two
   version: 
   folders:
@@ -21,23 +21,86 @@ entries:
       type: frontmatter
 
 # Always visible folder name that contains top-level menu items with links to 1st document/page
-  - title: "Homepage [First Document]"
+  - title: "MBON Portal Documentation"
     output: web
 
     folderitems:
 
 # Top-level menu item #1
-    - title: "Homepage Header 1"
+    - title: "Introduction"
 # A link to the 1st rendered document; consists of '/'+'markdown-document-name'+'.html'[+'#'+'any-header-or-other-anchor-on-the-page'
-      url: /index.html#header-1
+      url: /index.html#introduction
       output: web
 
-    - title: "Homepage Header 2"
-      url: /index.html#header-2
-      output: web
+      subfolders:
 
-    - title: "Homepage Header 3"
-      url: /index.html#header-3
+# A subfolder name that contains sub-level menu items with links to 2nd document/page
+      - title: "Using the MBON Data Portal"
+        output: web
+
+        subfolderitems:
+
+        - title: "Catalog"
+          url: /index.html#using-the-mbon-data-portal
+          output: web
+
+        - title: "Map View"
+          url: /index.html#map-view
+          output: web
+
+        - title: "Help Documentation Contents"
+          url: /index.html#help-documentation-contents
+          output: web
+
+      - title: "Data and File Formatting"
+        output: web
+
+        subfolderitems:
+
+        - title: "Overview"
+          url: /index.html#data-and-file-formatting
+          output: web
+
+        - title: "Tabular Data"
+          url: /index.html#tabular-data
+          output: web
+
+        - title: "Data Headers"
+          url: /index.html#data-headers
+          output: web
+
+        - title: "Specific Formatting Recommendations for Biological Data"
+          url: /index.html#specific-formatting-recommendations-for-biological-data
+          output: web
+
+      - title: "Metadata and Documentation"
+        output: web
+
+        subfolderitems:
+
+        - title: "Metadata"
+          url: /index.html#metadata-and-documentation
+          output: web
+
+        - title: "Additional Data Documentation"
+          url: /index.html#additional-data-documentation
+          output: web
+
+      - title: "Contributing Data to the MBON Portal"
+        output: web
+
+        subfolderitems:
+
+        - title: "Adding to the Data Catalog"
+          url: /index.html#contributing-data-to-the-mbon-portal
+          output: web
+
+        - title: "Adding to the Map View"
+          url: /index.html#adding-to-the-map-view
+          output: web
+
+    - title: "How Biodiversity Data Products are Created"
+      url: /index.html#how-biodiversity-data-products-are-created
       output: web
 
 #Always visible folder name that contains top-level menu items with links to 2nd document/page
