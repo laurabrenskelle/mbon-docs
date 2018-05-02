@@ -82,11 +82,11 @@ outputs to spotlight environmental events or geographic locations.
 
 Below are links to the help documentation for the MBON Data Portal.
 
-* [Overview](https://help.axds.co/portals/#introduction)
-* [Data Catalog](https://help.axds.co/portals/DataCatalog.html#data-catalog)
-* [Data Map](https://help.axds.co/portals/DataMap.html#data-map)
-* [Download Data](https://help.axds.co/portals/DataCatalog.html#download-visualized-data)
-* [Creating Custom Data Views](https://help.axds.co/portals/DataMap.html#data-views)
+* [Overview](https://mbon.ioos.us/help/)
+* [Data Catalog](https://mbon.ioos.us/help/overview.html#catalog)
+* [Data Map](https://mbon.ioos.us/help/overview.html#map)
+* [Download Data](https://mbon.ioos.us/help/overview.html#downloading-data-overview)
+* [Creating Custom Data Views](https://mbon.ioos.us/help/overview.html#data-views)
 
 ## Data and File Formatting
 
@@ -295,7 +295,7 @@ accompanied by robust, descriptive metadata using the integrated ISO-compliant m
 (ISO-19115-2). For assistance using the Research Workspace and its metadata editor visit:
 <https://workspace.aoos.org/help/>
 2. Once the data have been loaded and/or its embargo period ends, the researcher selects the
-['Publish'](https://workspace.aoos.org/help/PublishingData.html#publishing-data) option for their
+['Publish'](https://researchworkspace.com/help/PublishingData.html#publishing-data) option for their
 project in the Research Workspace.
 3. The entire contents of that folder and any subfolder therein will then be displayed in its native
 file format within the Catalog of the MBON Portal, where public users can view and download the data
