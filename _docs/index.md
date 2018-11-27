@@ -293,13 +293,14 @@ The general process for data submission is outlined below:
 1. Data are organized in the MBON Research Workspace (<https://researchworkspace.com>) and
 accompanied by robust, descriptive metadata using the integrated ISO-compliant metadata editor
 (ISO-19115-2). For assistance using the Research Workspace and its metadata editor visit:
-<https://workspace.aoos.org/help/>
+<https://researchworkspace.com/help/>
 2. Once the data have been loaded and/or its embargo period ends, the researcher selects the
 ['Publish'](https://researchworkspace.com/help/PublishingData.html#publishing-data) option for their
 project in the Research Workspace.
 3. The entire contents of that folder and any subfolder therein will then be displayed in its native
 file format within the Catalog of the MBON Portal, where public users can view and download the data
 and associated metadata.
+4. Additionally, datasets can be visualized in the MBON data portal with technical assistance from Axiom Data Science. More information is avaiable by contacting the IOOS MBON Program Manager directly.  
 
 #### Contributing Data via ERDDAP or OBIS
 
@@ -331,7 +332,7 @@ values. Seasonal statistics, available on time series longer than 3 years, inclu
 and 90th percentiles. Note: the number of points visually available to interactive users from the
 source data are limited when necessary using temporal binning, such as daily, weekly, monthly,
 seasonally and yearly. More information about these calculations is available in the
-[Portal Help Documentation](https://help.axds.co/portals/DataMap.html#id6) and below.
+[Portal Help Documentation](https://mbon.ioos.us/help/) and below.
 
 ## How Biodiversity Data Products are Created
 
