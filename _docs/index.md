@@ -2,12 +2,9 @@
 title: "MBON Portal Documentation"
 keywords: homepage
 tags: [getting_started, about, overview]
-#sidebar: home_sidebar
-sidebar: mydoc_sidebar
-topnav: topnav
 toc: false
 #permalink: index.html
-summary: This documentation describes the Marine Biodiversity Observation Network (MBON) portal and its underlying functionality. 
+summary: This documentation describes the Marine Biodiversity Observation Network (MBON) portal and its underlying functionality.
 ---
 
 
