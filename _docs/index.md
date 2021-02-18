@@ -201,8 +201,7 @@ For biological data submitted to the MBON portal, the following best practices a
 
 1. Archive data in CSV (or another non-proprietary, text-based format) whenever possible.
 2. Follow established conventions when naming variables or columns. Refer to the
-[IOOS Biological Data Terminology](https://ioos.github.io/biological-data-services/biological-observations.html#ioos-biological-data-terminology)
-for a list of data fields with names, descriptions, and format notes.
+IOOS Biological Data Terminology for a list of data fields with names, descriptions, and format notes.
 3. Define distinct events (such as location, time (with time zone), and/or depth) within a file with
 a unique identifier. The identifier is often presented as sample_id or collection_event_id.
 4. Include both the common name, the scientific name, and the
