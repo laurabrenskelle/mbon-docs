@@ -1,32 +1,27 @@
 ---
-title: "MBON Portal Documentation"
+title: "MBON Data and File Formatting"
 keywords: homepage
 tags: [getting_started, about, overview]
 toc: false
 #permalink: index.html
-summary: This documentation describes the Marine Biodiversity Observation Network (MBON) portal and its underlying functionality.
+summary: This documentation describes the Marine Biodiversity Observation Network (MBON) data and file formatting recommendations.
 ---
 
 
 
 ## Introduction
 
-This portal provides access to and interactive visualizations of data associated with the
-[Marine Biodiversity Observation Network (MBON)](https://ioos.noaa.gov/project/bio-data/). The portal
-includes real-time, delayed-mode, and historical data for in situ and remotely-sensed physical,
-chemical, and biological observations. This observation data is focused on organisms from microbes
-to whales, including measures of biodiversity (e.g. presence, abundance), productivity, genomics,
-phenology, and other relevant ecological process measurements or indices. Also featured are habitat
-characterization and habitat diversity measures, including satellite data and added-value data
-derived from satellite observations, and neural network model results, such as biogeographical
-seascape classifications. Featured in this portal are biodiversity indices that have been computed
-for key biological datasets within the MBON regions.
+[Marine Biodiversity Observation Network (MBON)](https://ioos.noaa.gov/project/bio-data/) 
+observation data is focused on organisms from microbes to whales, including measures of biodiversity 
+(e.g. presence, abundance), productivity, genomics, phenology, and other relevant ecological process 
+measurements or indices. Also featured are habitat characterization and habitat diversity measures, 
+including satellite data and added-value data derived from satellite observations, and neural network 
+model results, such as biogeographical seascape classifications.
 
-The data have been generated within the MBON regions of the Chukchi Sea (Alaska), Santa Barbara
-Channel (California), and the National Marine Sanctuaries in Monterey Bay (California) and the
-Florida Keys (Florida). Data have been collected by associated scientists or provided by multiple
-other independent programs, such as the Long-Term Ecological Research (LTER) programs, universities,
-and other fisheries or marine wildlife institutions.
+The data have been generated within the MBON regions of the Arctic, Central California, Southern 
+California, the Gulf of Maine, the Pacific Northwest, and South Florida. Data have been collected 
+by associated scientists or provided by multiple other independent programs, such as the Long-Term 
+Ecological Research (LTER) programs, universities, and other fisheries or marine wildlife institutions.
 
 This document describes the [MBON portal](https://mbon.ioos.us/) and its underlying functionality.
 Information is included about:
