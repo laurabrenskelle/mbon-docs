@@ -23,62 +23,13 @@ California, the Gulf of Maine, the Pacific Northwest, and South Florida. Data ha
 by associated scientists or provided by multiple other independent programs, such as the Long-Term 
 Ecological Research (LTER) programs, universities, and other fisheries or marine wildlife institutions.
 
-This document describes the [MBON portal](https://mbon.ioos.us/) and its underlying functionality.
-Information is included about:
+This document describes the recommendations for formatting data and metadata for the MBON community. 
+This includes:
 
-* using the portal;
-* submitting new data to portal; and
-* formatting and documentation of data.
+* formatting and documentation of data; and
+* submitting new data to portal.
 
-## Using the MBON Data Portal
-
-The MBON Data Portal is a data exploration tool with a customized public web interface that allows
-scientists, managers, and the general public to discover and access public data from many sources.
-The portal has two components: 1) Catalog and 2) Map View.
-
-### Catalog
-
-The Catalog provides search access for all datasets within the portal. The Catalog can be used to
-discover, browse, and download data files. Additionally, the Catalog can be used to add visualizable
-data layers to the Portal Map View. The Catalog contains several observational data types:
-
-**Real-time data** are ingested, served, and displayed by the MBON Data Portal at the same frequency
-the data are collected (and sometimes reported) by the originator with little to no delay. Examples
-of real-time assets include weather stations, oceanographic buoys, and webcams.
-
-**Near real-time data** are ingested by the MBON Data Portal at the same frequency that the data are
-made available; however, there is some delay (hours to days) between data collection and when the
-data provider makes it available. Examples of near real-time assets include satellite images and
-derived satellite products.
-
-**Historical data** are data that are one month old or older. Historical data are ingested from the
-associated Research Workspace or from national archives upon stakeholder request. Examples include
-species abundance surveys and similar research efforts.
-
-### Map View
-
-The Map View provides interactive data exploration, mapping, and charting for visualizable layers
-available in the catalog. All real-time and near real-time data within the MBON Data Portal are
-accessible as interactive visualizations in the map view (as indicated with a map preview image in
-the catalog). Historical data are also accessible as interactive visualizations in the Map View,
-with the exception of datasets that may be published directly to the Catalog from the Research
-Workspace (more HERE).
-
-The Map View is highly customizable (“Settings” and “Legend”), enabling deep exploration of the
-data. Advanced charting features allow users to view and summarize multiple datasets, and to create
-custom Data Views to compare data sources, bin by time, or plot climatologies and anomalies of
-timeseries datasets. Users can create and share custom compilations of biological, sensor, and model
-outputs to spotlight environmental events or geographic locations.
-
-### Help Documentation Contents
-
-Below are links to the help documentation for the MBON Data Portal.
-
-* [Overview](https://mbon.ioos.us/help/)
-* [Data Catalog](https://mbon.ioos.us/help/overview.html#catalog)
-* [Data Map](https://mbon.ioos.us/help/overview.html#map)
-* [Download Data](https://mbon.ioos.us/help/overview.html#downloading-data-overview)
-* [Creating Custom Data Views](https://mbon.ioos.us/help/overview.html#data-views)
+For help with navigating the MBON Data Portal, please see the [MBON portal help documentation](https://mbon.ioos.us/help/).
 
 ## Data and File Formatting
 
