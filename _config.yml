@@ -35,7 +35,7 @@ exclude:
   - theme/pdf-*
   #- theme/
 
-feedback_subject_line: MBON Portal Documentation
+feedback_subject_line: MBON Data and File Formatting Documentation
 # subject line prefix for feedback emails
 
 feedback_email: data.ioos@noaa.gov
