@@ -26,10 +26,22 @@ Ecological Research (LTER) programs, universities, and other fisheries or marine
 This document describes the recommendations for formatting data and metadata for the MBON community. 
 This includes:
 
-* formatting and documentation of data; and
-* submitting new data to portal.
+* formatting and documentation of data
 
-For help with navigating the MBON Data Portal, please see the [MBON portal help documentation](https://mbon.ioos.us/help/).
+For help with the MBON Data Portal, please see the [MBON portal help documentation](https://mbon.ioos.us/help/).
+
+## Categories of MBON observations
+- Taxonomic data
+- Organisms abundance
+- Genetic make-up (‘omics, including informatics requirements)
+- Acoustics (active and passive)
+- Imaging
+- Optics
+- Animal tracking
+- Voucher specimens
+
+## MBON Data Flow
+_include the data flow diagram for tabular data here_
 
 ## Data and File Formatting
 
