@@ -66,10 +66,13 @@ entries:
           output: web
 
       - title: "Metadata and Documentation"
-        url: /index.html#metadata-and-documentation
         output: web
 
         subfolderitems:
+        
+        - title: "Overview"
+          url: /index.html#metadata-and-documentation
+          output: web
 
         - title: "Metadata"
           url: /index.html#metadata
