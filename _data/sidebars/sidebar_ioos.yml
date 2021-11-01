@@ -33,9 +33,11 @@ entries:
       output: web
       
     - title: "Categories of MBON observations"
+      url: /index.html#categories-of-mbon-observations
       output: web
         
     - title: "MBON Data Flow"
+      url: /index#mbon-data-flow
       output: web
 
       subfolders:
