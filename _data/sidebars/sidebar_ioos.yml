@@ -60,6 +60,10 @@ entries:
         - title: "Data Headers"
           url: /index.html#data-headers
           output: web
+          
+        - title: "Data Values"
+          url: /index.html#data-values
+          output: web  
 
         - title: "Specific Formatting Recommendations for Biological Data"
           url: /index.html#specific-formatting-recommendations-for-biological-data
