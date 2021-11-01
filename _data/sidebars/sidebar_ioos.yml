@@ -31,15 +31,16 @@ entries:
 # A link to the 1st rendered document; consists of '/'+'markdown-document-name'+'.html'[+'#'+'any-header-or-other-anchor-on-the-page'
       url: /index.html#introduction
       output: web
+      
+    - title: "Categories of MBON observations"
+      output: web
+        
+    - title: "MBON Data Flow"
+      output: web
 
       subfolders:
 
 # A subfolder name that contains sub-level menu items with links to 2nd document/page
-      - title: "Categories of MBON observations"
-        output: web
-        
-      - title: "MBON Data Flow"
-        output: web
 
       - title: "Data and File Formatting"
         output: web
