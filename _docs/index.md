@@ -41,7 +41,7 @@ For help with the MBON Data Portal, please see the [MBON portal help documentati
 - Voucher specimens
 
 ## MBON Data Flow
-_include the data flow diagram for tabular data here_
+![mbon_data_flow](images/MBON Data Flow v1.3_transparent_noauthor.png)
 
 ## Data and File Formatting
 
