@@ -21,7 +21,7 @@ entries:
       type: frontmatter
 
 # Always visible folder name that contains top-level menu items with links to 1st document/page
-  - title: "MBON Data and File Formatting"
+  - title: "Table of Contents"
     output: web
 
     folderitems:
