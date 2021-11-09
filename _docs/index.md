@@ -48,6 +48,18 @@ For data collected/managed by an IOOS MBON project, the project should ensure da
 educators, and the public in an easily digestible way. To that end, coordination with an IOOS Regional Association to make the data available via ERDDAP services meets these goals. Using the services that ERDDAP provides, a data manager can develop a reproducible workflow for aligning the data to Darwin Core. To ensure that no observations are lost and there is long-term stewardship of these data, submitting to NCEI 
 
 ### RA ERDDAP
+Below is a list of the absolute bare minimum pieces of metadata required by ERDDAP. Some dataset types might have other requirements specific to the data file formats.
+* Global attributes
+  * [datasetID](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#datasetID)
+  * [sourceUrl](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#sourceUrl) - however, depends on dataset type
+  * [infoUrl](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#infoUrl)
+  * [institution](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#institution)
+  * [summary](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#summary)
+  * [title](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#title)
+* Variable attributes
+  * [dataVariable](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#dataVariable)
+  * [sourceName](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#sourceName)
+
 Tips and Tricks:
 * Date/time - It is not a requirement to have a variable assigned to `time`  (ie. `<destinationName>time</destinationName>`) in ERDDAP. If a variable's destinationName is set to `time`, ERDDAP will use the `units` attribute to attempt to interpret the datum. See the documentation on [How ERDDAP Deals with Time](https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html#erddap) for more information.
   * *Trick* - If you don't want the variable interpreted as a time, set the `<destinationName>` to something other then `time`. For example, in your source file the coumn `time` has a value of `2020-01-01`, but you don't want that interpreted by ERDDAP. Then, set the `destinationName` to `time2` and ERDDAP will treat the field as a string. 
