@@ -21,7 +21,7 @@ model results, such as biogeographical seascape classifications.
 The data have been generated within the MBON regions of the Arctic, Central California, Southern 
 California, the Gulf of Maine, the Pacific Northwest, and South Florida. Data have been collected 
 by associated scientists or provided by multiple other independent programs, such as the IOOS Regional 
-Associations Long-Term Ecological Research (LTER) programs, universities, and other fisheries or marine wildlife institutions.
+Associations, Long-Term Ecological Research (LTER) programs, universities, and other fisheries or marine wildlife institutions.
 
 This document describes the recommendations for formatting data and metadata for the MBON community. 
 This includes:
