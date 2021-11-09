@@ -43,6 +43,33 @@ For help with the MBON Data Portal, please see the [MBON portal help documentati
 ## MBON Data Flow
 ![mbon_data_flow](./MBON_Data_Flow_v1.3_transparent_noauthor.png)
 
+*describe the data flow here*
+For data collected/managed by an IOOS MBON project, the project should ensure data and information are readily available to resource managers, scientists,
+educators, and the public in an easily digestible way. To that end, coordination with an IOOS Regional Association to make the data available via ERDDAP services meets these goals. Using the services that ERDDAP provides, a data manager can develop a reproducible workflow for aligning the data to Darwin Core. To ensure that no observations are lost and there is long-term stewardship of these data, submitting to NCEI 
+
+### RA ERDDAP
+Tips and Tricks:
+* Date/time - It is not a requirement to have a variable assigned to `time`  (ie. `<destinationName>time</destinationName>`) in ERDDAP. If a variable's destinationName is set to `time`, ERDDAP will use the `units` attribute to attempt to interpret the datum. See the documentation on [How ERDDAP Deals with Time](https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html#erddap) for more information.
+  * *Trick* - If you don't want the variable interpreted as a time, set the `<destinationName>` to something other then `time`. For example, in your source file the coumn `time` has a value of `2020-01-01`, but you don't want that interpreted by ERDDAP. Then, set the `destinationName` to `time2` and ERDDAP will treat the field as a string. 
+  * *Caution* - If you do not have an assigned `time` variable in a dataset, some of the access formats might not be available (eg. .esricsv, .odvtxt). 
+* Latitude/Longitude - Similar to date/time above, it is not a requirement to have latitude/longitude variables. However, the dataset will have a limited amount of access formats.
+* *Trick* - ERDDAP now has the capability to create derived variables from existing fields (since v2.10). See the documentation on [Script SourceNames / Derrived Variables](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#scriptSourceNames).
+
+### Darwin Core Alignment
+See the [Standardizing Marine Biological Data Guide](https://ioos.github.io/bio_data_guide/).
+
+### Sending to OBIS-USA
+*section on sending to OBIS-USA (TBD)* maybe a section in bio data guide?
+
+### Sending to NCEI
+See https://www.ncei.noaa.gov/archive.
+In the submission package sent to NCEI, indicate that the observations are from an IOOS MBON project (or some affiliation with IOOS).
+* [ATRAC](https://www.ncdc.noaa.gov/atrac/guidelines.html) - Use the Advanced Tracking and Resource Tool for Archive Collections (ATRAC) to submit repeating or multiple delivery data, or data that exceeds 20 GB.
+* [S2N](https://www.nodc.noaa.gov/s2n/) - Use Send2NCEI to submit non-repeating or single delivery data less than 20 GB.
+
+### Loading into MBON Portal
+* See documentation on [contributing to the MBON portal](https://mbon.ioos.us/help/how-to/catalog/contribute-data.html).
+
 ## Data and File Formatting
 
 In choosing a file format, data collectors should select a format that is usable, open, and that
@@ -64,10 +91,8 @@ archiving.
 * Geospatial raster data: GeoTIFF/TIFF, NetCDF, HDF-EOS
 * Moving images: MOV, MPEG, AVI, MXF
 * Sounds: WAVE, AIFF, MP3, MXF
-* Statistics: ASCII, DTA, POR, SAS, SAV
 * Still images: TIFF, JPEG 2000, PDF, PNG, GIF, BMP
-* Text: XML, PDF/A, HTML, ASCII, UTF-8
-* Web archive: WARC
+* Text: XML, PDF/A, ASCII, UTF-8
 
 For more complete guidance on best practices and appropriate formats for long-term preservation and
 future accessibility, see the
@@ -118,8 +143,8 @@ observation as a row and each column representing a measurement or contextual in
 header row at the top of each file describing the values in column.
 
 Follow these best practices for data headers:
-* Use commonly accepted parameter names for header titles (e.g. site, date, treatment, units of
-measure, etc).
+* Use commonly accepted parameter names for header titles (e.g. site, date, treatment, 
+units_of_measure, etc).
 * Use consistent capitalization of header names (e.g. temp and precip, or Temp and Precip).
 * Explicitly state units of reported parameters in the data file and the metadata.
 * If a coded value of abbreviation is used, be sure to provide a definition in the metadata.
@@ -141,7 +166,8 @@ a zero and a blank value for numeric fields.
 floating point NaN value (Not a Number), or the database NULL. Be advised that NULL and NaN can
 cause problems, particularly with some older programs. For character fields, use NULL, “not
 applicable”, “n/a” or “none”.
-* If there are multiple reasons that cells might not values, include a separate code for each reason.
+* If there are multiple reasons that cells might not have values, include a separate code for each 
+reason.
 * The null value(s) should be consistently applied within and among data files.
 * If data values are encoded, be sure to provide a definition in the metadata.
 * Don’t include rows with summary statistics. It is best to put summary statistics, figures,
@@ -155,20 +181,19 @@ conductivity, but focus on measuring variables related to one or more species of
 Examples of biological data include, but are not limited to, marine bird surveys, genetic analyses
 of salmon stocks, and toxicological analyses of lichen.
 
-For biological data submitted to the MBON portal, the following best practices apply:
+For biological data, the following best practices apply:
 
+1. Align to [Darwin Core](https://dwc.tdwg.org/), when possible. 
 1. Archive data in CSV (or another non-proprietary, text-based format) whenever possible.
-2. Follow established conventions when naming variables or columns. Refer to the
-IOOS Biological Data Terminology for a list of data fields with names, descriptions, and format notes.
+2. Follow established conventions when naming variables or columns. Refer to the [List of Darwin Core
+Terms](https://dwc.tdwg.org/list/)
 3. Define distinct events (such as location, time (with time zone), and/or depth) within a file with
-a unique identifier. The identifier is often presented as sample_id or collection_event_id.
+a unique identifier. The identifier is often presented as sample_id or collection_event_id. See 
+Darwin Core term [eventID](https://dwc.tdwg.org/list/#dwc_eventID)
 4. Include both the common name, the scientific name, and the
-[ITIS Taxonomic Serial Number (TSN)](https://www.itis.gov/) and/or
-[WoRMS AphiaID code](http://www.marinespecies.org/aphia.php?p=match) for each species.
-5. For visualization of data in the MBON portal, it is best to normalize data to a scale such that
-different factors can be compared. Normalized data is often presented as count per area, count per
-volume, catch per unit effort, etc. Normalized data should be clearly differentiated from
-non-normalized values if presented within the same data file.
+[WoRMS AphiaID code](http://www.marinespecies.org/aphia.php?p=match) for each species. The 
+[ITIS Taxonomic Serial Number (TSN)](https://www.itis.gov/) is another option if WoRMS does not meet
+the needs of your data.
 
 ## Metadata and Documentation
 
@@ -181,9 +206,7 @@ Throughout the data lifecycle, both the metadata and documentation must be recor
 reflect the actions taken to the data. This includes collection, acquisition, processing, quality
 review, and analysis, as well as any other stage of the data lifecycle.
 
-The dataset’s metadata and/or documentations (or a link to it) must be distributed with the
-biological dataset for submission to MBON data portal. The metadata will be made available alongside
-the dataset within the portal.
+The dataset’s metadata and/or documentations (or a link to it) must be distributed with the dataset. 
 
 ### Metadata
 
@@ -195,16 +218,26 @@ follows a standard format to ensure the semantics of metadata fields are underst
 consumers of the metadata, to ease the use of the metadata in catalog and discovery systems, and
 simplify automatic machine-to-machine transfer of records.
 
-It is recommended to use the ISO 19115 XML for metadata standards following the ISO 19115 guidance from
-[NGDC](https://www.ngdc.noaa.gov/metaview/page?xml=NOAA/NESDIS/NGDC/STP/Geomag/iso/xml/G10161.xml&view=xml2text/xml-to-text-ISO)
-and [NCDDC](https://www.ncddc.noaa.gov/metadata-standards/).
-See also the [Category:ISO 19115 in the NOAA Environmental Data Management Wiki](https://geo-ide.noaa.gov/wiki/index.php?title=Category%3AISO_19115).
-If data are being served by ERDDAP, then ERDDAP will automatically generate the ISO and FGDC XML documents.
-Metadata in the [FGDC-authored Content Standard for Digital Geospatial Metadata (CSDGM)](https://www.fgdc.gov/metadata/csdgm-standard)
-format may also be submitted following the
-[Content Standard for Biological Data Profile](https://www.fgdc.gov/standards/projects/metadata/biometadata/biodatap.pdf).
+There are two recomended metadata formats.
+1. Ecological Markup Language (EML) - https://eml.ecoinformatics.org/
+2. ISO 19115 family of standards - https://www.fgdc.gov/metadata/iso-standards
 
-If using the [Research Workspace](https://researchworkspace.com/intro/) to submit data, an
+#### EML
+The EML project is an open source, community oriented project dedicated to providing a high-quality metadata specification for describing data relevant to diverse disciplines that involve observational research like ecology, earth, and environmental science. The specification is maintained by voluntary project members who donate their time and experience in order to advance information management for ecology. Project decisions are made by consensus of the current maintainers on the project.
+
+See this documentation for more information:
+Matthew B. Jones, Margaret O’Brien, Bryce Mecum, Carl Boettiger, Mark Schildhauer, Mitchell Maier, Timothy Whiteaker, Stevan Earl, Steven Chong. 2019. Ecological Metadata Language version 2.2.0. KNB Data Repository. doi:10.5063/F11834T2
+
+
+#### ISO
+It is recommended to use the ISO 19115-2 XML for metadata standards following the ISO 19115 guidance from
+[NCEI](https://www.ncei.noaa.gov/sites/default/files/2021-03/AB-GUID-02823_R1_Guidance%20for%20The%20NCEI%20Collection%20Level%20Metadata%20Template%20v1.1._0.pdf).
+See also [NCEI's guidance on Metadata](https://www.ncei.noaa.gov/resources/metadata).
+
+Methods for generating metadata:
+* Various software packages exist to create EML metadata. See the list of tools in the [standardizing marine biological data guide](https://ioos.github.io/bio_data_guide/tools.html#tools). 
+* If data are being served by ERDDAP, then ERDDAP will automatically generate the ISO XML documents.
+* If using the [Research Workspace](https://researchworkspace.com/intro/) to submit data, an
 integrated metadata editor is included to generate metadata in the FGDC-endorsed ISO 19110 and
 19115-2 standards for geospatial metadata. Refer to the
 [Metadata Best Practices](https://www.axiomdatascience.com/best-practices/MetadataBestPractices.html#metadata-best-practices)
