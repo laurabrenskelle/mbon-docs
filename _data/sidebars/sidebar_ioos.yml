@@ -21,92 +21,75 @@ entries:
       type: frontmatter
 
 # Always visible folder name that contains top-level menu items with links to 1st document/page
-  - title: "Table of Contents"
+  - title: "Introduction"
     output: web
-
+    url: /index.html
     folderitems:
-
-# Top-level menu item #1
     - title: "Introduction"
-# A link to the 1st rendered document; consists of '/'+'markdown-document-name'+'.html'[+'#'+'any-header-or-other-anchor-on-the-page'
       url: /index.html#introduction
       output: web
-      
     - title: "Categories of MBON observations"
       url: /index.html#categories-of-mbon-observations
       output: web
 
-      subfolders:
 
-# A subfolder name that contains sub-level menu items with links to 2nd document/page
-      - title: "MBON Data Flow"
-        output: web
-
-        subfolderitems:
-
-        - title: "Overview"
-          url: /index.html#mbon-data-flow
-          output: web
-
-        - title: "RA ERDDAP"
-          url: /index.html#ra-erddap
-          output: web
-
-        - title: "Darwin Core Alignment"
-          url: /index.html#darwin-core-alignment
-          output: web
-
-        - title: "Sending to OBIS-USA"
-          url: /index.html#sending-to-obis-usa
-          output: web
-
-        - title: "Sending to NCEI"
-          url: /index.html#sending-to-ncei
-          output: web
-
-        - title: "Loading into MBON Portal"
-          url: /index.html#loading-into-mbon-portal
-          output: web
-
-
-      - title: "Data and File Formatting"
-        output: web
-
-        subfolderitems:
-
-        - title: "Overview"
-          url: /index.html#data-and-file-formatting
-          output: web
-
-        - title: "Tabular Data"
-          url: /index.html#tabular-data
-          output: web
-
-        - title: "Data Headers"
-          url: /index.html#data-headers
-          output: web
-          
-        - title: "Data Values"
-          url: /index.html#data-values
-          output: web  
-
-        - title: "Specific Formatting Recommendations for Biological Data"
-          url: /index.html#specific-formatting-recommendations-for-biological-data
-          output: web
-
-      - title: "Metadata and Documentation"
-        output: web
-
-        subfolderitems:
-        
-        - title: "Overview"
-          url: /index.html#metadata-and-documentation
-          output: web
-
-        - title: "Metadata"
-          url: /index.html#metadata
-          output: web
-
-        - title: "Additional Data Documentation"
-          url: /index.html#additional-data-documentation
-          output: web
+  - title: "MBON Data Flow"
+    output: web
+    folderitems:
+    - title: "Overview"
+      url: /mbon-data-flow.html
+      output: web
+    - title: "RA ERDDAP"
+      url: /mbon-data-flow.html#ra-erddap
+      output: web
+    - title: "Darwin Core Alignment"
+      url: /mbon-data-flow.html#darwin-core-alignment
+      output: web
+    - title: "Sending to OBIS-USA"
+      url: /mbon-data-flow.html#sending-to-obis-usa
+      output: web
+    - title: "Sending to NCEI"
+      url: /mbon-data-flow.html#sending-to-ncei
+      output: web
+    - title: "Loading into MBON Portal"
+      url: /mbon-data-flow.html#loading-into-mbon-portal
+      output: web
+  - title: "Data and File Formatting"
+    output: web
+    folderitems:
+    - title: "Overview"
+      url: /data.html
+      output: web
+    - title: "Tabular Data"
+      url: /data.html#tabular-data
+      output: web
+    - title: "Data Headers"
+      url: /data.html#data-headers
+      output: web
+    - title: "Data Values"
+      url: /data.html#data-values
+      output: web
+    - title: "Specific Formatting Recommendations for Biological Data"
+      url: /data.html#specific-formatting-recommendations-for-biological-data
+      output: web
+    - title: "Additional Data Documentation"
+      url: /metadata.html#additional-data-documentation
+      output: web
+  - title: "Metadata and Documentation"
+    output: web
+    folderitems:
+    - title: "Overview"
+      url: /metadata.html
+      output: web
+    - title: "Metadata"
+      url: /metadata.html#metadata
+      output: web
+    - title: "Additional Data Documentation"
+      url: /metadata.html#additional-data-documentation
+      output: web
+  - title: "MBON use case"
+    output: web
+    folderitems:
+    - title: "Overview"
+      url: /use-case.html
+      output: web
