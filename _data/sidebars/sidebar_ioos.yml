@@ -35,14 +35,39 @@ entries:
     - title: "Categories of MBON observations"
       url: /index.html#categories-of-mbon-observations
       output: web
-        
-    - title: "MBON Data Flow"
-      url: /index#mbon-data-flow
-      output: web
 
       subfolders:
 
 # A subfolder name that contains sub-level menu items with links to 2nd document/page
+      - title: "MBON Data Flow"
+        output: web
+
+        subfolderitems:
+
+        - title: "Overview"
+          url: /index.html#mbon-data-flow
+          output: web
+
+        - title: "RA ERDDAP"
+          url: /index.html#ra-erddap
+          output: web
+
+        - title: "Darwin Core Alignment"
+          url: /index.html#darwin-core-alignment
+          output: web
+
+        - title: "Sending to OBIS-USA"
+          url: /index.html#sending-to-obis-usa
+          output: web
+
+        - title: "Sending to NCEI"
+          url: /index.html#sending-to-ncei
+          output: web
+
+        - title: "Loading into MBON Portal"
+          url: /index.html#loading-into-mbon-portal
+          output: web
+
 
       - title: "Data and File Formatting"
         output: web

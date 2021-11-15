@@ -41,17 +41,51 @@ For help with the MBON Data Portal, please see the [MBON portal help documentati
 - Voucher specimens
 
 ## MBON Data Flow
-![mbon_data_flow](./MBON_Data_Flow_v1.3_transparent_noauthor.png)
+![mbon_data_flow](./MBON_Data_Flow.png)
 
-*describe the data flow here*
-For data collected/managed by an IOOS MBON project, the project should ensure data and information are readily available to resource managers, scientists,
-educators, and the public in an easily digestible way. To that end, coordination with an IOOS Regional Association to make the data available via ERDDAP services meets these goals. Using the services that ERDDAP provides, a data manager can develop a reproducible workflow for aligning the data to Darwin Core. To ensure that no observations are lost and there is long-term stewardship of these data, submitting to NCEI 
+For data collected/managed by an IOOS MBON project, the project should ensure data and information are readily available 
+to resource managers, scientists, educators, and the public in an easily digestible way. To that end, coordination with 
+an IOOS Regional Association to make the data available via ERDDAP services meets these goals. Using the services that 
+ERDDAP provides, a data manager can develop a reproducible workflow for aligning the data to the 
+[Darwin Core standard](https://dwc.tdwg.org/). Finally, submission to NCEI ensures that no observations are lost and 
+there is long-term stewardship of these data, as well as meeting our PARR requirements. The sections below provide more 
+context as well as tips and tricks for each of the elements in the diagram above.
 
 ### RA ERDDAP
-Below is a list of the absolute bare minimum pieces of metadata required by ERDDAP. Some dataset types might have other requirements specific to the data file formats.
+For the IOOS MBON projects ERDDAP is used as a mechanism for quickly and efficiently sharing biological observations with 
+the broader community. While ERDDAP can provide data access following the FAIR principles, further alignment to Darwin 
+Core and submission to OBIS is necessary to make these observations more useful to a broader audience. Essentially, serving
+data through an RA ERDDAP is one part of a larger process and should be treated as such.
+
+When preparing a dataset to be served via ERDDAP it is recommended to follow a few key principles for data management. 
+* For organizing your data files, follow the [Tidy data](https://r4ds.had.co.nz/tidy-data.html) recommendations:
+  * Variables as columns
+  * Observations as rows
+  * Don't embed data in the column headers.
+* Follow [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601) for dates
+  * YYYY-MM-DDTHH:mm:ssZ (eg. 2021-08-19T12:38:22Z)
+  * Include the time zone.
+* Latitude and Longitude in decimal degrees (WGS84 preferred)
+* Identify units of measure
+* Check species names against [WoRMS](https://www.marinespecies.org/).
+
+See the sections below on [Data and File Formatting](#data-and-file-formatting) and 
+[Metadata and Documentation](#metadata-and-documentation) for more recommendations and best practices.
+
+**Additional Resources**
+* [Configuring datasets.xml](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html) - The ERDDAP manual 
+for configuring a dataset.
+* [ERDDAP Google Group](https://groups.google.com/g/erddap) - A great place to search for questions and ask your 
+questions.
+
+#### ERDDAP Requirements
+
+Below is a list of the absolute bare minimum pieces of metadata required by ERDDAP. Some dataset types might have other 
+requirements specific to the data file formats.
 * Global attributes
   * [datasetID](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#datasetID)
-  * [sourceUrl](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#sourceUrl) - however, depends on dataset type
+  * [sourceUrl](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#sourceUrl) - however, depends on 
+dataset type
   * [infoUrl](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#infoUrl)
   * [institution](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#institution)
   * [summary](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#summary)
@@ -60,23 +94,55 @@ Below is a list of the absolute bare minimum pieces of metadata required by ERDD
   * [dataVariable](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#dataVariable)
   * [sourceName](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#sourceName)
 
-Tips and Tricks:
-* Date/time - It is not a requirement to have a variable assigned to `time`  (ie. `<destinationName>time</destinationName>`) in ERDDAP. If a variable's destinationName is set to `time`, ERDDAP will use the `units` attribute to attempt to interpret the datum. See the documentation on [How ERDDAP Deals with Time](https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html#erddap) for more information.
-  * *Trick* - If you don't want the variable interpreted as a time, set the `<destinationName>` to something other then `time`. For example, in your source file the coumn `time` has a value of `2020-01-01`, but you don't want that interpreted by ERDDAP. Then, set the `destinationName` to `time2` and ERDDAP will treat the field as a string. 
-  * *Caution* - If you do not have an assigned `time` variable in a dataset, some of the access formats might not be available (eg. .esricsv, .odvtxt). 
-* Latitude/Longitude - Similar to date/time above, it is not a requirement to have latitude/longitude variables. However, the dataset will have a limited amount of access formats.
-* *Trick* - ERDDAP now has the capability to create derived variables from existing fields (since v2.10). See the documentation on [Script SourceNames / Derrived Variables](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#scriptSourceNames).
+#### ERDDAP Tips and Tricks
+* Date/time - It is not a requirement to have a variable assigned to `time`  (ie. 
+`<destinationName>time</destinationName>`) in ERDDAP. If a variable's destinationName is set to `time`, ERDDAP will use 
+the `units` attribute to attempt to interpret the datum. See the documentation on [How ERDDAP Deals with 
+Time](https://coastwatch.pfeg.noaa.gov/erddap/convert/time.html#erddap) for more information.
+  * *Trick* - If you don't want the variable interpreted as a time, set the `<destinationName>` to something other than 
+`time`. For example, in your source file the coumn `time` has a value of `2020-01-01`, but you don't want that 
+interpreted by ERDDAP. Then, set the `destinationName` to `time2` and ERDDAP will treat the field as a string. 
+  * *Caution* - If you do not have an assigned `time` variable in a dataset, some of the access formats might not be 
+available (eg. .esricsv, .odvtxt). 
+* Latitude/Longitude - Similar to date/time above, it is not a requirement to have latitude/longitude variables. However, 
+the dataset will have a limited amount of access formats.
+* *Trick* - ERDDAP now has the capability to create derived variables from existing fields (since v2.10). See the 
+documentation on [Script SourceNames / Derrived 
+Variables](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#scriptSourceNames).
+* *Trick* - ERDDAP can handle media files, such as image, audio and video files. See 
+[MediaFiles](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#MediaFiles) for more information.
+   * *Bonus Trick* - 
+[EDDTableFromFileNames](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html#MediaFiles) allows you to 
+create a dataset from information about files in the file system. While it doesn't serve data from within the files it 
+does provide a mechanism for sharing data in other formats (eg. zip packages, Word docs, Excel spreadsheets, etc.). The 
+resultant dataset in ERDDAP is composed of the following columns: `url`, `name`, `lastModified`, and `size`.
 
 ### Darwin Core Alignment
-See the [Standardizing Marine Biological Data Guide](https://ioos.github.io/bio_data_guide/).
+When aligning a dataset to Darwin Core it is recommended that a data manager starts with serving the data via ERDDAP
+or some comparable online system which has an [API](https://en.wikipedia.org/wiki/API) (or a way to programmatically 
+grab the data). When working through the Darwin Core alignment using a scripting language (eg. R or Python) which uses 
+the data served via ERDDAP (or comparable service) is highly recommended. A scripting language provides provenance, 
+transparency, and reproducibility for the translation. This helps reduce the amount of errors and back-and-forth between 
+data managers and OBIS. It is highly recommended that, if using a scripting language, the scripts are shared via 
+distributed version control systems like [GitHub](www.github.com).
+
+**Recommendations TL;DR;**
+* Use a scripting language
+* Script should point to source data on some web service
+* Scripts should be shared via GitHub.
+
+**Additional Resources**
+* [Standardizing Marine Biological Data Guide](https://ioos.github.io/bio_data_guide/).
 
 ### Sending to OBIS-USA
 *section on sending to OBIS-USA (TBD)* maybe a section in bio data guide?
 
 ### Sending to NCEI
 See https://www.ncei.noaa.gov/archive.
-In the submission package sent to NCEI, indicate that the observations are from an IOOS MBON project (or some affiliation with IOOS).
-* [ATRAC](https://www.ncdc.noaa.gov/atrac/guidelines.html) - Use the Advanced Tracking and Resource Tool for Archive Collections (ATRAC) to submit repeating or multiple delivery data, or data that exceeds 20 GB.
+In the submission package sent to NCEI, indicate that the observations are from an IOOS MBON project (or some 
+affiliation with IOOS).
+* [ATRAC](https://www.ncdc.noaa.gov/atrac/guidelines.html) - Use the Advanced Tracking and Resource Tool for Archive 
+Collections (ATRAC) to submit repeating or multiple delivery data, or data that exceeds 20 GB.
 * [S2N](https://www.nodc.noaa.gov/s2n/) - Use Send2NCEI to submit non-repeating or single delivery data less than 20 GB.
 
 ### Loading into MBON Portal
@@ -109,9 +175,10 @@ archiving.
 For more complete guidance on best practices and appropriate formats for long-term preservation and
 future accessibility, see the
 [Library of Congress’ Sustainability of Digital Formats](https://www.loc.gov/preservation/digital/formats/)
-web site, the LOC’s page on [Recommended Format Specifications for preservation](https://www.loc.gov/preservation/resources/rfs/),
-and Hook et al’s recommendations in
-[Best Practices for Preparing Environmental Data Sets to Share and Archive](https://daac.ornl.gov/PI/BestPractices-2010.pdf).
+web site, the LOC’s page on [Recommended Format Specifications for 
+preservation](https://www.loc.gov/preservation/resources/rfs/), and Hook et al’s recommendations in
+[Best Practices for Preparing Environmental Data Sets to Share and 
+Archive](https://daac.ornl.gov/PI/BestPractices-2010.pdf).
 
 ### Tabular Data
 
@@ -231,14 +298,19 @@ consumers of the metadata, to ease the use of the metadata in catalog and discov
 simplify automatic machine-to-machine transfer of records.
 
 There are two recomended metadata formats.
-1. Ecological Markup Language (EML) - https://eml.ecoinformatics.org/
-2. ISO 19115 family of standards - https://www.fgdc.gov/metadata/iso-standards
+1. Ecological Markup Language (EML) - [https://eml.ecoinformatics.org/](https://eml.ecoinformatics.org/)
+2. ISO 19115 family of standards - [https://www.fgdc.gov/metadata/iso-standards](https://www.fgdc.gov/metadata/iso-standards)
 
 #### EML
-The EML project is an open source, community oriented project dedicated to providing a high-quality metadata specification for describing data relevant to diverse disciplines that involve observational research like ecology, earth, and environmental science. The specification is maintained by voluntary project members who donate their time and experience in order to advance information management for ecology. Project decisions are made by consensus of the current maintainers on the project.
+The EML project is an open source, community oriented project dedicated to providing a high-quality metadata 
+specification for describing data relevant to diverse disciplines that involve observational research like ecology, 
+earth, and environmental science. The specification is maintained by voluntary project members who donate their time 
+and experience in order to advance information management for ecology. Project decisions are made by consensus of the 
+current maintainers on the project.
 
 See this documentation for more information:
-Matthew B. Jones, Margaret O’Brien, Bryce Mecum, Carl Boettiger, Mark Schildhauer, Mitchell Maier, Timothy Whiteaker, Stevan Earl, Steven Chong. 2019. Ecological Metadata Language version 2.2.0. KNB Data Repository. doi:10.5063/F11834T2
+Matthew B. Jones, Margaret O’Brien, Bryce Mecum, Carl Boettiger, Mark Schildhauer, Mitchell Maier, Timothy Whiteaker, 
+Stevan Earl, Steven Chong. 2019. Ecological Metadata Language version 2.2.0. KNB Data Repository. doi:[10.5063/F11834T2](https://dx.doi.org/10.5063/F11834T2)
 
 
 #### ISO
@@ -247,7 +319,8 @@ It is recommended to use the ISO 19115-2 XML for metadata standards following th
 See also [NCEI's guidance on Metadata](https://www.ncei.noaa.gov/resources/metadata).
 
 Methods for generating metadata:
-* Various software packages exist to create EML metadata. See the list of tools in the [standardizing marine biological data guide](https://ioos.github.io/bio_data_guide/tools.html#tools). 
+* Various software packages exist to create EML metadata. See the list of tools in the [standardizing marine biological 
+data guide](https://ioos.github.io/bio_data_guide/tools.html#tools). 
 * If data are being served by ERDDAP, then ERDDAP will automatically generate the ISO XML documents.
 * If using the [Research Workspace](https://researchworkspace.com/intro/) to submit data, an
 integrated metadata editor is included to generate metadata in the FGDC-endorsed ISO 19110 and
@@ -261,7 +334,7 @@ document provides field-by-field guidance on how to write high-quality metadata.
 * Save documentation about the data in non-proprietary file formats, such as .txt, .xml, or .pdf.
 * Images, pictures, or figures should be saved as JPEG or GIF files.
 * The name of the documentation should follow a logical naming convention identical to the related
-data file(s), but indicating that the file is a metadata record, e.g. [data_file_name]_METADATA.xml.
+data file(s), but indicating that the file is a metadata record, e.g. `[data_file_name]_METADATA.xml`.
 * For complicated datasets, supplemental documentation is more useful when structured as a user’s
 guide for the data. When constructing such a guide, include enough detail for someone with
 sufficient domain knowledge to understand, trust, and reuse your data 20+ years in the future.
