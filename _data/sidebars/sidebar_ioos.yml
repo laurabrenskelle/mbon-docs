@@ -73,7 +73,7 @@ entries:
       url: /data.html#specific-formatting-recommendations-for-biological-data
       output: web
     - title: "Additional Data Documentation"
-      url: /metadata.html#additional-data-documentation
+      url: /data.html#additional-data-documentation
       output: web
   - title: "Metadata and Documentation"
     output: web
