@@ -40,8 +40,7 @@ When preparing a dataset to be served via ERDDAP it is recommended to follow a f
 * Latitude and Longitude in decimal degrees (WGS84 preferred)
 * Identify units of measure
 * Check species names against [WoRMS](https://www.marinespecies.org/).
-
-See the sections below on [Data and File Formatting](data.html) and
+* See the sections on [Data and File Formatting](data.html) and
 [Metadata and Documentation](metadata.html) for more recommendations and best practices.
 
 **Additional Resources**
@@ -113,8 +112,15 @@ distributed version control systems like [GitHub](https://www.github.com).
 
 ## Sending to NCEI
 When planning on submitting data to NCEI, the data provider should coordinate submissions through the IOOS Office to 
-identify which submission system should be used. This will also ensure that the appropriate resources are identified 
+identify which submission system should be used. This will ensure that the appropriate resources are identified 
 at NCEI and the IOOS Office is aware of requirements.
+
+Ideally, the raw data should be archived at NCEI. Typically, this will be the dataset served through 
+the [IOOS RA ERDDAP](#ra-erddap) and following the key principles laid out above. Archiving the dataset in its more raw
+form (vs the Darwin Core aligned form) ensures that no information is lost. This also ensures that data providers 
+can always go back to the source data if issues arise. 
+
+**Note:** NCEI and OBIS-USA are developing a pathway to archive the datasets from the OBIS-USA IPT.
 
 For more information about archiving data at NCEI, see [https://www.ncei.noaa.gov/archive](https://www.ncei.noaa.gov/archive).
 
