@@ -112,15 +112,13 @@ distributed version control systems like [GitHub](https://www.github.com).
 
 ## Sending to NCEI
 When planning on submitting data to NCEI, the data provider should coordinate submissions through the IOOS Office to 
-identify which submission system should be used. This will ensure that the appropriate resources are identified 
-at NCEI and the IOOS Office is aware of requirements.
+identify which submission system should be used. This will ensure that the dataset is appropriately identified, tracked,
+and stewarded through the submission process.
 
 Ideally, the raw data should be archived at NCEI. Typically, this will be the dataset served through 
 the [IOOS RA ERDDAP](#ra-erddap) and following the key principles laid out above. Archiving the dataset in its more raw
 form (vs the Darwin Core aligned form) ensures that no information is lost. This also ensures that data providers 
 can always go back to the source data if issues arise. 
-
-**Note:** NCEI and OBIS-USA are developing a pathway to archive the datasets from the OBIS-USA IPT.
 
 For more information about archiving data at NCEI, see [https://www.ncei.noaa.gov/archive](https://www.ncei.noaa.gov/archive).
 
@@ -129,6 +127,10 @@ has some affiliation with IOOS). Below is a short summary of the two submission 
 * [ATRAC](https://www.ncdc.noaa.gov/atrac/guidelines.html) - Use the Advanced Tracking and Resource Tool for Archive
 Collections (ATRAC) to submit repeating or multiple delivery data, or data that exceeds 20 GB.
 * [S2N](https://www.nodc.noaa.gov/s2n/) - Use Send2NCEI to submit non-repeating or single delivery data less than 20 GB.
+
+**Note:** NCEI and OBIS-USA are developing a pathway to archive the datasets from the OBIS-USA IPT. This will archive
+the Darwin Core Archive version of the dataset. While this is an extremely valuable product, the raw data should be 
+archived at NCEI as well.
 
 ## Loading into MBON Portal
 * See documentation on [contributing to the MBON portal](https://mbon.ioos.us/help/how-to/catalog/contribute-data.html).
