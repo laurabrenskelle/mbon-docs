@@ -29,6 +29,7 @@ the broader community. While ERDDAP can provide data access following the FAIR p
 Core and submission to OBIS is necessary to make these observations more useful to a broader audience. Essentially, serving
 data through an RA ERDDAP is one part of a larger process and should be treated as such.
 
+### Key principles for data
 When preparing a dataset to be served via ERDDAP it is recommended to follow a few key principles for data management.
 * For organizing your data files, follow the [Tidy data](https://r4ds.had.co.nz/tidy-data.html) recommendations:
   * Variables as columns
@@ -117,7 +118,7 @@ identify which submission system should be used. This will ensure that the datas
 and stewarded through the submission process.
 
 Ideally, the raw data should be archived at NCEI. Typically, this will be the dataset served through 
-the [IOOS RA ERDDAP](#ra-erddap) and following the key principles laid out above. Archiving the dataset in its more raw
+the [IOOS RA ERDDAP](#ra-erddap) and following the [key principles](#key-principles-for-data) laid out above. Archiving the dataset in its more raw
 form (vs the Darwin Core aligned form) ensures that no information is lost. This also ensures that data providers 
 can always go back to the source data if issues arise. 
 
