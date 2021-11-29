@@ -112,10 +112,14 @@ distributed version control systems like [GitHub](https://www.github.com).
 *section on sending to OBIS-USA (TBD)* maybe a section in bio data guide?
 
 ## Sending to NCEI
-See [https://www.ncei.noaa.gov/archive](https://www.ncei.noaa.gov/archive) for more information.
+When planning on submitting data to NCEI, the data provider should coordinate submissions through the IOOS Office to 
+identify which submission system should be used. This will also ensure that the appropriate resources are identified 
+at NCEI and the IOOS Office is aware of requirements.
 
-In the submission package sent to NCEI, indicate that the observations are from an IOOS MBON project (or some
-affiliation with IOOS).
+For more information about archiving data at NCEI, see [https://www.ncei.noaa.gov/archive](https://www.ncei.noaa.gov/archive).
+
+Briefly, the submission package sent to NCEI should indicate that the observations are from an IOOS MBON project (or 
+has some affiliation with IOOS). Below is a short summary of the two submission systems at NCEI and their intended uses.
 * [ATRAC](https://www.ncdc.noaa.gov/atrac/guidelines.html) - Use the Advanced Tracking and Resource Tool for Archive
 Collections (ATRAC) to submit repeating or multiple delivery data, or data that exceeds 20 GB.
 * [S2N](https://www.nodc.noaa.gov/s2n/) - Use Send2NCEI to submit non-repeating or single delivery data less than 20 GB.
