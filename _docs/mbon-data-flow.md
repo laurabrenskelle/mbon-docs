@@ -104,8 +104,9 @@ distributed version control systems like [GitHub](https://www.github.com).
 * Scripts should be shared via GitHub.
 
 **Additional Resources**
-* [Standardizing Marine Biological Data Guide](https://ioos.github.io/bio_data_guide/).
-* [Aligning data to Darwin Core notebook in IOOS CodeLab](https://ioos.github.io/ioos_code_lab/content/code_gallery/data_management_notebooks/2020-12-08-DataToDwC.html).
+* [Standardizing Marine Biological Data Guide](https://ioos.github.io/bio_data_guide/) - A guide and examples of 
+aligning datasets to Darwin Core.
+* [Aligning data to Darwin Core notebook in IOOS CodeLab](https://ioos.github.io/ioos_code_lab/content/code_gallery/data_management_notebooks/2020-12-08-DataToDwC.html) - A Python notebook for aligning a dataset to Darwin Core.
 
 ## Sending to OBIS-USA
 *section on sending to OBIS-USA (TBD)* maybe a section in bio data guide?
