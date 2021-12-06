@@ -1,3 +1,3 @@
 # mbon-docs
 
-Documentation for the [Marine Biodiversity Observation Network portal](https://mbon.ioos.us/). 
+Guidance for Marine Biodiversity Observation Network (MBON) Data and File Formatting.
