@@ -145,7 +145,7 @@ steps to load data into the MBON Portal:
     1. This will ensure that we are aware of the dataset and have identified next actions to take. 
     2. Identify that you would like the dataset visualized in the MBON portal and include a description of what that 
 visualization might be.
-2. Share the dataset through OBIS/GBIF or through ERDDAP.
+2. Share the dataset through OBIS/GBIF and/or through ERDDAP.
    1. For OBIS/GBIF see [Darwin Core alignment](#darwin-core-alignment) and [Sending to OBIS-USA](#sending-to-obis-usa).
    2. For sharing through ERDDAP see [RA ERDDAP](#ra-erddap).
 3. Iterate with the MBON portal development team to ensure the visualizations are appropriate for the observations.
