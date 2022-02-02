@@ -135,4 +135,20 @@ the Darwin Core Archive version of the dataset. While this is an extremely valua
 archived at NCEI as well.
 
 ## Loading into MBON Portal
-* See documentation on [contributing to the MBON portal](https://mbon.ioos.us/help/how-to/catalog/contribute-data.html).
+As depicted in the [data flow diagram](#mbon-data-flow), the MBON data portal can retrieve data from a variety of 
+sources. The two preferred sources for data include OBIS (or GBIF) and/or ERDDAP (hosted by a Regional Association), 
+however other web services could be acceptable to bring data in. In some cases, the MBON data portal might bring in 
+occurrence data through OBIS as well as additional observations that are served through ERDDAP. Below are the recommended 
+steps to load data into the MBON Portal:
+
+1. The dataset should be registered in the [MBON dataset registration form](https://docs.google.com/forms/d/e/1FAIpQLSfguACbLmcLiFxHKsR5W5Mv9nEfd0E8oX2rY78gdwAYTrq_zA/viewform?usp=sf_link). 
+    1. This will ensure that we are aware of the dataset and have identified next actions to take. 
+    2. Identify that you would like the dataset visualized in the MBON portal and include a description of what that 
+visualization might be.
+2. Share the dataset through OBIS/GBIF or through ERDDAP.
+   1. For OBIS/GBIF see [Darwin Core alignment](#darwin-core-alignment) and [Sending to OBIS-USA](#sending-to-obis-usa).
+   2. For sharing through ERDDAP see [RA ERDDAP](#ra-erddap).
+3. Iterate with the MBON portal development team to ensure the visualizations are appropriate for the observations.
+
+_To note_ There are additional pathways to share data with the MBON portal using the Research Workspace. For more 
+information on that pathway see [Contribute Data in the MBON portal documentation](https://mbon.ioos.us/help/how-to/catalog/contribute-data.html).
