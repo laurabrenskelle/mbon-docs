@@ -30,8 +30,7 @@ This dataset was processed by Dylan Pugh during the 2022 Marine BioData Mobiliza
 [Tracking OBIS Submission for WBTS Calanus Data](https://github.com/ioos/bio_data_guide/issues/102)
 
 ### Sending data to OBIS-USA
-* Pull Request:
-  * [https://github.com/ioos/bio_data_guide/pull/101](https://github.com/ioos/bio_data_guide/pull/101)
+Data were submitted to OBIS-USA by contributing the Darwin Core aligned files (and code) to the [ioos/bio-data-guide](https://github.com/ioos/bio_data_guide) repository. See this [Pull Request](https://github.com/ioos/bio_data_guide/pull/101) for more information.
 
 ### Sending data to NCEI
 *Describe the process for sending data to NCEI, including lessons learned. Include link to NCEI.*
