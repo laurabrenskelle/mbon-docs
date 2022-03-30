@@ -93,3 +93,6 @@ entries:
     - title: "Overview"
       url: /use-case.html
       output: web
+    - title: 'Gulf of Maine Wilkinson Basin Time Series Station Calanus Abundance Observations'
+      url: /use-case.html#gulf-of-maine-wilkinson-basin-time-series-station-calanus-abundance-observations
+      output: web
