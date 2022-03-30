@@ -110,7 +110,11 @@ aligning datasets to Darwin Core.
 * [Aligning data to Darwin Core notebook in IOOS CodeLab](https://ioos.github.io/ioos_code_lab/content/code_gallery/data_management_notebooks/2020-12-08-DataToDwC.html) - A Python notebook for aligning a dataset to Darwin Core.
 
 ## Sending to OBIS-USA
-*section on sending to OBIS-USA (TBD)* maybe a section in bio data guide?
+Below are the various options for sending your data to OBIS-USA.
+
+* Attend the monthly [Standardizing Marine Biological Data Working Group](https://github.com/ioos/bio_data_guide#monthly-meetings) meeting and discuss transfer options.
+* Contribute your dataset (and code) to the `datasets/` directory in the ioos/bio_data_guide repository ([here](https://github.com/ioos/bio_data_guide/tree/main/datasets)). See the [Contribute example applications](https://github.com/ioos/bio_data_guide/blob/main/CONTRIBUTING.md#contribute-example-applications) documentation for more information.
+* Email Darwin Core aligned files to Abby Benson.
 
 ## Sending to NCEI
 When planning on submitting data to NCEI, the data provider should coordinate submissions through the IOOS Office to 
