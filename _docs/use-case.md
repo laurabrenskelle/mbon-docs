@@ -13,24 +13,25 @@ Gulf of Maine Wilkinson Basin Time Series Station (WBTS) Calanus Abundance Obser
 Projects: NERACOOS ISMN (Integrated Sentinel Monitoring Network)- MBON (Marine Biodiversity Observation Network) Gulf of Maine Plankton Observation Time Series: Wilkinson Basin Time Series Station (WBTS)
 
 Creator: Jeffrey Runge, Ph.D (School of Marine Sciences, University of Maine, Darling Marine Center)
+Data processor: Dylan Pugh
 
 ### Data Flow Diagram
-*insert a copy of the data flow diagram with appropriate links.*
+ERDDAP -> DwC -> OBIS IPT
 
 ### Serving raw data via IOOS RA ERDDAP
-*Share the link to IOOS RA ERDDAP dataset and discuss challenges.*
-
-[Gulf of Maine WBTS Calanus Abundance Observations](http://www.neracoos.org/erddap/tabledap/WBTS_CFIN_2005_2017.html)
+Raw Gulf of Maine WBTS Calanus Abundance Observations available in ERDDAP: <http://www.neracoos.org/erddap/tabledap/WBTS_CFIN_2005_2017.html>
 
 ### Aligning raw data to Darwin Core
-This dataset was processed by Dylan Pugh during the 2022 Marine BioData Mobilization Workshop.
+This dataset was processed by Dylan Pugh during the 2022 Marine BioData Mobilization Workshop in the notebook linked below:
 
-[MBTS MBON process](https://github.com/ioos/bio_data_guide/tree/main/datasets/WBTS_MBON)
-
-[Tracking OBIS Submission for WBTS Calanus Data](https://github.com/ioos/bio_data_guide/issues/102)
+**MBTS MBON process:** <https://github.com/ioos/bio_data_guide/tree/main/datasets/WBTS_MBON>
 
 ### Sending data to OBIS-USA
-Data were submitted to OBIS-USA by contributing the Darwin Core aligned files (and code) to the [ioos/bio-data-guide](https://github.com/ioos/bio_data_guide) repository. See this [Pull Request](https://github.com/ioos/bio_data_guide/pull/101) for more information.
+Data were submitted to OBIS-USA by contributing the Darwin Core aligned files (and code) to the [ioos/bio-data-guide](https://github.com/ioos/bio_data_guide) repository. See this [GitHub Issue](https://github.com/ioos/bio_data_guide/issues/102) and subsequent Pull Requests [here](https://github.com/ioos/bio_data_guide/pull/101) and [here](https://github.com/ioos/bio_data_guide/pull/108) for more information on the conversion process.
+
+The processed files were uploaded to the repository and OBIS-USA downloaded them for loading in the OBIS-USA IPT.
+
+Data were published via the OBIS-USA IPT at: <https://www1.usgs.gov/obis-usa/ipt/resource?r=gom_wbts_mesozooplankton>.
 
 ### Sending data to NCEI
 *Describe the process for sending data to NCEI, including lessons learned. Include link to NCEI.*
