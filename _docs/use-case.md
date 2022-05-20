@@ -33,9 +33,9 @@ The processed files were uploaded to the repository and OBIS-USA downloaded them
 
 Data were published via the OBIS-USA IPT at: <https://www1.usgs.gov/obis-usa/ipt/resource?r=gom_wbts_mesozooplankton>.
 
-Data were shared to OBIS at: https://obis.org/dataset/5ef55cd8-05a1-4569-8e17-ceb224e40f59
+Data were shared to OBIS at: <https://obis.org/dataset/5ef55cd8-05a1-4569-8e17-ceb224e40f59>
 
-Data were shared to GBIF at: https://www.gbif.org/dataset/29651377-23c8-4f45-b439-693a1a23cee1
+Data were shared to GBIF at: <https://www.gbif.org/dataset/29651377-23c8-4f45-b439-693a1a23cee1>
 
 ### Sending data to NCEI
 1. Use [ERDDAP's `ArchiveADataset.sh`](https://coastwatch.pfeg.noaa.gov/erddap/download/setup.html#ArchiveADataset) for the dataset <http://www.neracoos.org/erddap/tabledap/WBTS_CFIN_2005_2017.html> to create an archival package for submission to NCEI as a one-off via [Send2NCEI](https://www.ncei.noaa.gov/archive/send2ncei/).
