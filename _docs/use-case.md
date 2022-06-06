@@ -16,6 +16,8 @@ Creator: Jeffrey Runge, Ph.D (School of Marine Sciences, University of Maine, Da
 Data processor: Dylan Pugh
 
 ### Data Flow Diagram
+![data flow](./WBTS_Zoo_MBON_Data_Flow_v1.5.svg)
+
 ERDDAP -> DwC -> OBIS IPT
 
 ### Serving raw data via IOOS RA ERDDAP
