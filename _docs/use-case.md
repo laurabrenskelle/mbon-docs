@@ -49,7 +49,7 @@ Data were shared to GBIF at: <https://www.gbif.org/dataset/29651377-23c8-4f45-b4
       -v "$(pwd)/erddap/content:/usr/local/tomcat/content/erddap" \
       -v "$(pwd)/erddap/data:/erddapData" \
       axiom/docker-erddap:latest \
-      bash -c "cd webapps/erddap/WEB-INF/ && bash ArchiveADataset.sh -verbose BagIt tar.gz default WBTS_CFIN_2005_2017 default "" "" .nc SHA-256"
+      bash -c "cd webapps/erddap/WEB-INF/ && bash ArchiveADataset.sh -verbose BagIt tar.gz default WBTS_CFIN_2004_2017 default "" "" .nc SHA-256"
       ```
    2. This will create a `.tar.gz` package and accompanying `.tar.gz.sha256.txt` manifest file for the dataset. The `.tar.gz.sha256.txt` is the manifest for the `.tar.gz` file and can be used to verify the integrity of the package.
    3. Inside the `.tar.gz` package is an appopriately formatted BagIt package, as [defined by the Library of Congress](https://www.ietf.org/rfc/rfc8493.txt).
