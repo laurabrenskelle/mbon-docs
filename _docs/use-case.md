@@ -16,9 +16,9 @@ Creator: Jeffrey Runge, Ph.D (School of Marine Sciences, University of Maine, Da
 Data processor: Dylan Pugh
 
 ### Data Flow Diagram
-![data flow](./WBTS_Zoo_MBON_Data_Flow_v1.5.svg)
+{% include_relative images/WBTS_Zoo_MBON_Data_Flow_v1.5.svg %}
 
-ERDDAP -> DwC -> OBIS IPT
+<!--[diagram link](https://app.diagrams.net/#G1-4qY0ch3SXJhHYdOmcareoW9Xpb6Acak)-->
 
 ### Serving raw data via IOOS RA ERDDAP
 Raw Gulf of Maine WBTS Calanus Abundance Observations available in ERDDAP: <http://www.neracoos.org/erddap/tabledap/WBTS_CFIN_2004_2017.html>
