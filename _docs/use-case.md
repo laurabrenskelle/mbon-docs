@@ -20,6 +20,13 @@ Data processor: Dylan Pugh
 
 <!--[diagram link](https://app.diagrams.net/#G1-4qY0ch3SXJhHYdOmcareoW9Xpb6Acak)-->
 
+**Order of activities:**
+1. Serve data and metadata on RA ERDDAP
+2. Align ERDDAP data to DarwinCore
+3. Share to OBIS-USA
+4. OBIS-USA shares via IPT to OBIS and GBIF
+5. 
+
 ### Serving raw data via IOOS RA ERDDAP
 Raw Gulf of Maine WBTS Calanus Abundance Observations available in ERDDAP: <http://www.neracoos.org/erddap/tabledap/WBTS_CFIN_2004_2017.html>
 
