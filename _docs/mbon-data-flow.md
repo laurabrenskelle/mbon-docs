@@ -108,7 +108,8 @@ distributed version control systems like [GitHub](https://www.github.com).
 **Additional Resources**
 * [Standardizing Marine Biological Data Guide](https://ioos.github.io/bio_data_guide/) - A guide and examples of 
 aligning datasets to Darwin Core.
-* [Aligning data to Darwin Core notebook in IOOS CodeLab](https://ioos.github.io/ioos_code_lab/content/code_gallery/data_management_notebooks/2020-12-08-DataToDwC.html) - A Python notebook for aligning a dataset to Darwin Core.
+* [Aligning data to Darwin Core notebook in IOOS CodeLab](https://ioos.github.io/ioos_code_lab/content/code_gallery/data_management_notebooks/2020-12-08-DataToDwC.html) - A Python notebook for aligning a dataset to Darwin Core available in the IOOS Code Lab.
+* [OBIS Manual](https://manual.obis.org/) - This manual provides an overview on how to contribute data to OBIS and how to acess data from OBIS
 
 ## Sending to OBIS-USA
 Below are the various options for sending your data to OBIS-USA.
@@ -135,8 +136,8 @@ has some affiliation with IOOS). Below is a short summary of the two submission 
 Collections (ATRAC) to submit repeating or multiple delivery data, or data that exceeds 20 GB.
 * [S2N](https://www.nodc.noaa.gov/s2n/) - Use Send2NCEI to submit non-repeating or single delivery data less than 20 GB.
 
-**Note:** NCEI and OBIS-USA are developing a pathway to archive the datasets from the OBIS-USA IPT. This will archive
-the Darwin Core Archive version of the dataset. While this is an extremely valuable product, the raw data should be 
+**Note:** NCEI and OBIS-USA have established an automated process to archive the datasets from the OBIS-USA IPT. The process archives
+the Darwin Core Archive version of the dataset and updates the NCEI Archival Information Package found at <https://www.ncei.noaa.gov/access/metadata/landing-page/bin/iso?id=gov.noaa.nodc:0250940>. While the OBIS-IPT is an extremely valuable product, the raw data should be 
 archived at NCEI as well.
 
 ## Loading into MBON Portal
