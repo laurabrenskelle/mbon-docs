@@ -47,6 +47,7 @@ When preparing a dataset to be served via ERDDAP it is recommended to follow a f
 **Additional Resources**
 * [Configuring datasets.xml](https://coastwatch.pfeg.noaa.gov/erddap/download/setupDatasetsXml.html) - The ERDDAP manual
 for configuring a dataset.
+* [ERDDAP Quick Start Guide](https://ioos.github.io/erddap-gold-standard/) - Quick Start Guide for deploying ERDDAP in a Docker Container.
 * [ERDDAP Google Group](https://groups.google.com/g/erddap) - A great place to search for questions and ask your
 questions.
 
