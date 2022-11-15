@@ -1,16 +1,17 @@
 ---
-title: "How to guide for MBON Metadata"
+title: "How-to guide for MBON metadata"
 keywords: metadata
 toc: true
-summary: This is a how to guide for organizing MBON metadata.
+summary: This is a how-to guide for collecting MBON metadata.
 ---
+The information below can also be viewed as a Microsoft Word document [here](/assets/EML.Metadata.Template.docx).
 
 # EML Metadata
 **Dataset shortname (will be the URL in the IPT, all lower case, no spaces):** <br/>
 **Title:** <br/>
 **Update Frequency (pick one):** Daily, Weekly, Monthly, Biannually, Annually, As Needed, Continually, Irregular, Not Planned, Unknown, Other Maintenance Period <br/>
-**Data License (pick one):** CC-0, CC-BY, CC-BY-NC <br />
-**Description / Abstract:** <br />
+**Data License (pick one):** CC-0, CC-BY, CC-BY-NC <br/>
+**Description / Abstract:** <br/>
 **Resource Contacts (include First Name, Last Name, Position, Organization, Email, can link to ORCID):** <br/>
 **Resource Creators (include First Name, Last Name, Position, Organization, Email, can link to ORCID):** <br/>
 **Metadata Providers (include First Name, Last Name, Position, Organization, Email, can link to ORCID):** <br/>
