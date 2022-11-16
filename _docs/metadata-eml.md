@@ -5,7 +5,7 @@ toc: true
 tags: [metadata, eml]
 summary: This is a how-to guide for collecting MBON metadata.
 ---
-The information below can also be viewed as a Microsoft Word document [here](/assets/EML.Metadata.Template.docx).
+The information below can also be viewed as a Microsoft Word document [here](https://github.com/ioos/mbon-docs/raw/gh-pages/assets/EML.Metadata.Template.docx).
 
 # EML Metadata
 **Dataset shortname (will be the URL in the IPT, all lower case, no spaces):** <br/>
