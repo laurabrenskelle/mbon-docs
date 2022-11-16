@@ -87,6 +87,12 @@ entries:
     - title: "Additional Data Documentation"
       url: /metadata.html#additional-data-documentation
       output: web
+  - title: "How to guide for MBON metadata"
+    output: web
+    folderitems:
+    - title: "Overview"
+      url: /metadata-eml.html
+      output: web
   - title: "MBON use case"
     output: web
     folderitems:
