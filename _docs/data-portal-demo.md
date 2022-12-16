@@ -6,7 +6,12 @@ toc: false
 summary: This page demonstrates the MBON Data Portal and some of the tools in the portal.
 ---
 
-# BeachCOMBERS - Effort Based Beach Cast Surveys
+**What's on this page?**
+
+* TOC
+{:toc}
+
+# Overview
 _20 Years of Data_
 
 **About this document**
@@ -15,7 +20,7 @@ CeNCOOS (<https://www.cencoos.org>) (Central and Northern California Ocean Obser
 program, aggregated beach cast surveys of marine mammals and seabirds from BeachCOMBERS, Beach Watch (<https://farallones.org/beach-watch>), 
 and the Marine Mammal Stranding Program (<http://gsp.humboldt.edu/Projects/MMSP/Site1/aboutus.html>) at Cal Poly Humboldt. 
 These data, when combined cover surveys from Del Norte County down to Los Angeles County for over 25 years. 
-These data have been made available in the California Ocean Observing Systems Data Portal (<https://data.caloos.org/>), which in 
+These data have been made available in the Marine Biodiversity Observation Network Data Portal (<https://mbon.ioos.us/>), which in 
 addition to the COMBERS data, is jam packed with other marine data including data from moorings, satellite, R.O.V surveys, 
 and oceanographic and atmospheric models. 
 
@@ -24,49 +29,57 @@ have helped collect.
 
 _Note: If you get lost or want to skip ahead, there are links to the portal along the way._
 
-* TOC
-{:toc}
+
 
 ## Open the Data Portal
 Note: The data portal works best using the Firefox and Chrome web browsers. 
 
-The Cal OOS Portal can be accessed by going to data.caloos.org The portal has three main components:
-1.	The Map Layer
-2.	The Data Catalog (which can also be accessed in the Map Layer
-3.	The Glider Visualizer (which we are not going to cover today)
-To get to the **Catalog Layer** click on the **Search 1000+ Datasets** button.
+The MBON Data Portal can be accessed by going to <https://mbon.ioos.us> The portal has three main components:
+1. The Map Layer
+2. The Data Catalog (which can also be accessed in the Map Layer)
+3. The Glider Visualizer (which we are not going to cover today)
 
-[Screenshot of clicking on link]
+To get to the **Catalog Layer** click on the **Search 270+ Datasets** button.
 
-Now let’s search for the BeachCOMBERS data. This is part of the Data Layer named **Effort-based surveys**, **Northern and 
-Central California Beaches**, **Seabirds and Marine Mammals**, but the **Data Catalog** is pretty smart and each dataset includes 
+![](./img.png)
+
+Now let’s search for the BeachCOMBERS data. This is part of the Data Layer named **Effort-based surveys, Northern and 
+Central California Beaches: Seabirds and Marine Mammals**, but the **Data Catalog** is pretty smart and each dataset includes 
 a set of tags that are used to classify different types of data. 
 
 _Note: There are many advanced ways to filter queries in the **Data Catalog** that we won't be covering here, but can be 
 accessed by selecting the **Advanced** button underneath the search bar_
 
-[Screenshot of catalog]
+![](./img_1.png)
+
+Link to the Catalog Search interface: <https://mbon.ioos.us/#search?type_group=all&page=1>
 
 ## Add Data Layer to the map
-Once we find the dataset we want, we can add it to the Map Layer by selecting the Layers button and then the Add to map button. 
+
+Once we find the dataset we want (`Bird Carcasses` from **Effort-based surveys, Northern and Central California Beaches: 
+Seabirds and Marine Mammals**), we can add it to the **Map Layer** by selecting **Add to map** button for the appropriate 
+**Layer**. 
 
 Here we also can read a narrative about the dataset, which includes a description of how different metrics are calculated as 
 well as a link to the ISO metadata record for those who want to dive deeper.
 
-[Screenshot of searching data catalog]
+![](./img_2.png)
+
+Link to dataset metadata and layers: <https://mbon.ioos.us/#module-metadata/89c64bd6-c1e2-4cc9-bdbf-2efa61586b50>
 
 ## Navigating the Map Layer (Click on the Map Button) 
 Here we can visualize many types of data both spatially and temporally. 
 
 Each different dataset is called a **Layer**. 
 
-By default, the real-time sensors data layer will be displayed.
+By default, the real-time sensors data layer will be displayed. IS THIS TRUE??
 
-[Screenshot of map w/ sensor layer]
+![](./img_3.png)
 
 There is a lot going on here! Let’s focus on the blue **Navigation Header** at the top of the portal.
 
-[Screenshot of tabs at top of map sensor layer]
+
+![](./img_4.png)
 
 **There are seven Tabs here**:
 1. **Catalog** - This takes us to the Data Catalog
@@ -80,23 +93,23 @@ There is a lot going on here! Let’s focus on the blue **Navigation Header** at
 ## Exploring the Data 
 Now let’s go back to the map by clicking on **Map** button.
 
-[Screenshot of map w/ sensor layer]
+![](./img_3.png)
 
 It looks very busy, so let’s go over how to use the **Map**.
 
-Currently, we have two data Layers loaded up. First the Seabird carcass layer and the Real-Time sensor layer, which is 
-loaded by default (See [Appendix for how to use this layer](https://www.cencoos.org/images/tutorials/COMBERS_portal_tutorial_V2.html#sensor_layer)). 
+Currently, we have two data Layers loaded up. First the **bird carcass** layer and the **Global sensors** layer, which is 
+loaded by default (See [Appendix for how to use this layer](#appendix-using-the-real-time-sensor-layer)).
 
 In the meantime, let’s hide this layer. 
 
 Under the **Legend** tab select the **eyeball icon with a slash** next to the title of the layer. Selecting this again 
 will re-enable the layer.
 
-[Screenshot of legend from map w/ eyeball highlighted]
+![](./img_5.png)
 
 **Zooming into Monterey Bay**
 
-[Screenshot w/ zoom tools highlighted]
+![](./img_6.png)
 
 Zooming in the portal can be accomplished a couple of different ways:
 1. The Plus and Minus Buttons
@@ -105,19 +118,23 @@ Zooming in the portal can be accomplished a couple of different ways:
 
 Now that that is done, we should only be able to see **Seabird Carcass** surveys. Each color corresponds to a survey site.
 
-[Screenshot of seabird carcass in mapper]
+![](./img_7.png)
 
-Let change the default **measurement** to display the **Counts** instead of **Carcasses per effort per km**. Click on the 
-**Measurement** drop down menu in the Legend and select **Counts**.
+Let change the default **measurement** to display the **Count** instead of **Carcasses per effort per km**. Click on the 
+**Measurement** drop down menu in the Legend and select **Count**.
 
-[Screenshot of dropdown menu]
+![](./img_8.png)
 
 Now hover the mouse over a site and see what happens.
 
-[screenshot of mouse hover]
+![](./img_9.png)
 
 This is a sum off all of the most common Seabird Carcasses that has been found at this beach, as well as some metadata about the beach. 
-We can also click on a site to see the time series of that site. Try it outl! -->
+We can also click on a site to see the time series of that site. Try it out!
+
+![](./img_10.png)
+
+Link to **Map View** with `bird carcass` layer loaded: <https://mbon.ioos.us/?ls=R3ThwxNj#map>
 
 ## Filtering Data 
 The portal has multiple ways to filter data: by time, by taxonomy, by collection group and more. 
@@ -125,51 +142,57 @@ The portal has multiple ways to filter data: by time, by taxonomy, by collection
 In the Legend box select plus sign on the **Species (common name)** drop-down menus. This will give a list of the common 
 names of different birds that were identified.
 
-[Screenshot filter selector]
+![](./img_11.png)
 
-For more information about filtering by taxonomy and organization see [Appendix: Advanced Filtering](https://www.cencoos.org/images/tutorials/COMBERS_portal_tutorial_V2.html#filter_layer).
+For more information about filtering by taxonomy and organization see [Appendix: Advanced Filtering](#appendix-advanced-filtering).
+
+Link to **Map View** with `bird carcass` layer loaded: <https://mbon.ioos.us/?ls=R3ThwxNj#map>
 
 ## Keyword Filtering 
 There are some other really cool filtering feature, try selecting a Species using the common name. 
 
-You can also use keywords to filter the data, try searching for “gull."
+You can also use keywords to filter the data, try searching for `gull`.
 
-[Screenshot of filter by keyword]
+![](./img_12.png)
 
-Now when you hover over a site you can see that multiple species of gulls are included in the filter.
+Now when you hover over a site you can see that multiple species of `gull` are included in the filter.
 
-[Screenshot of hover over]
+![](./img_13.png)
 
-**Polygon Selection**
+Link to **Map View** filtered by `gull`: <https://mbon.ioos.us/?ls=_f6KAdsb#map>
+
+## Polygon Selection
 
 Select the polygon icon on the right-hand side of the page.
 
-[Screenshot highlighting polygon]
+![](./img_14.png)
 
 Now use that tool to draw a polygon around Monterey Bay. When you are done, double click on the polygon and this will 
 extract a time series of all of the selected data.
 
-[Screenshot of selecting a polygon]
+![](./img_15.png)
 
 Now let’s look at some specific mortality events and then include some environmental data from satellites. 
 
 Using what the tools we just showed:
-* Filter the data to just select common Murre
-* Use the polygon selection tool to select the beaches around Monterey Bay 
-* Select the Carcasses Per Km Measurement
+* **Filter** the data to just select `Common Murre`
+* Use the **polygon selection tool** to select the beaches around `Monterey Bay` 
+* Select a **measurement** of `Carcasses Per Km`
 
 The results should be a time series plot that looks similar to this:
 
-[Screenshot of histogram plot]
+![](./img_16.png)
 
-Let’s expand this plot by clicking on the <span style="color:red;">Enlarge</span> icon (see the red box above)
+Let’s expand this plot by clicking on the Enlarge icon:
+
+![](./img_17.png)
 
 Now we can change how the data are binned through time. By default this dataset is binned into annual values, but we can 
 also display the data for each month (the raw values) or by the season. 
 
 Click on the **Time Bin** pull down and select **Months**.
 
-[Screenshot of timebin highlighting some pieces]
+![](./img_18.png)
 
 Adding 
 
@@ -180,106 +203,142 @@ From this plot a couple of things stand out:
    2. 2007: Starvation event
    3. 2015: The Blob: Marine Heatwave
 
+Link to **Map View** with polygon selected: <https://mbon.ioos.us/?ls=jsiGoOod#map>
+
 ## Adding/Comparing Sea Surface Temperature
 Let's add the SST layer as measured from Satellites.
 
 This can be found by searching the **Data Catalog** as shown earlier, but the data catalog can be easily accessed by 
 selecting the **Find Data** next to the **Legend** in the Map Layer.
 
-Now let’s search for "SST Monthly" and add the AVHRR West Coast SST, 1 MONTH Composite layer by selecting the blue cross 
-next to the name.
+Now let’s search for `SST` and add the **GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis (.01deg/1km)** 
+layer by selecting the blue cross next to the name.
 
 [GIF of searching in map]
 
-[GIF adding data and making histogram]
+![](./img_19.png)
 
 Now let’s create a **time series of SST in the middle of Monterey Bay**. This is done by creating a virtual sensor, a 
 tool that extracts a time series at a single point out of a spatial dataset. This make take a second to load. 
-[Link](https://data.cencoos.org/?ls=2f9faf8d-f7f4-0666-16d3-e0d41b079384#map)
 
 [GIF adding SST to map]
 
-Once it’s loaded, try to see if you can expand the plot of change around temporal binning.
+![](./img_20.png)
 
-[Screenshot of timeseries]
+Once it’s loaded, try to see if you can **expand** the plot of change around temporal binning.
+
+![](./img_21.png)
 
 _Tip: The portal has a ton of features and data. Feel free to poke around and try to break things!_
 
-### TOPIC: Comparing Data with Data Views
+Link to **Map View** with SST virtual station selected: <https://mbon.ioos.us/?ls=hqKsfp0L#map>
 
-Now we can create a **Data View** to view multiple types of data on the same page. The first data view will compare two beaches.
-1. Use the polygon to select the Common Murres in Monterey Bay
-2. With the time series open for the beach, Select the counts per effort per km
-3. Create a new Data View by selecting the Blue Star button. Then select the Plus sign to create a new data view. Give it a name.
+## TOPIC: Comparing Data with Data Views
+
+_Note: If continuing from above, you will need to click the eyeball icon on the SST layer to **hide layer**._
+
+Now we can create a **Data View** to view multiple types of data on the same page. The first **data view** will compare two beaches.
+1. **Filter** the `Bird Carcasses` layer for `Common Murre`
+2. Use the **polygon selection** to select the Monterey Bay region.
+3. In the time series window, Select the **Measurement** of `counts per effort per km`
+4. Create a new Data View by selecting the Blue Star button. Then select the Plus sign to create a new data view. Give it 
+a name (we named it `Monterey Beaches` in the screenshot below).
+
    Then a check the two boxes to **Save to data view** and **Add to compare chart**
 
-[GIF creating new view]
+![](./img_22.png)
 
-[GIF looking at charts]
+Now add SST time series to the `Monterey Beaches` **Data view** you just learned how to create from the middle of Monterey Bay.
+See [Adding/Comparing Sea Surface Temperature](#addingcomparing-sea-surface-temperature).
 
-Now add SST time series to the **Monterey Beaches** Data view you just learned how to create from the middle of Monterey Bay.
+_Note: If continuing from above, the SST layer should already be available as a **map layer**. You need to **show layer**
+by selecting the eyeball icon to see it on the map._
 
-Finally, let’s look at the Data View! This is done by selecting the **Data View** button near the top of the portal and 
-selecting the data view you just created from the drop down menu.
+Pick a point on the map to create your virtual station for the SST time series. Add that to the `Monterey Beaches` **Data view**.
 
-### TOPIC: Comparing Data with Data Views
-Now we can create a **Data View** to view multiple types of data on the same page. The first data view will compare two beaches.
-1. Use the polygon to select the Common Murres in Monterey Bay
-2. With the time series open for the beach, Select the counts per effort per km
-3. Create a new Data View by selecting the **Blue Star** button. Then select the Plus sign to create a new data view. Give it a name.
-   Then a check the two boxes to **Save to data view** and **Add to compare chart**
+![](./img_23.png)
 
-[GIF save data to data view and add to compare chart]
+Finally, let’s look at the **Data View**! This is done by selecting the **Data View** button near the top of the portal and 
+selecting the data view you just created from the drop down menu (`Monterey Beaches`).
 
-1. Now add SST time series to the `Monterey Beaches` Data view you just learned how to create from the middle of Monterey Bay.
-2. Finally, lets look at the Data View! This is done by selecting the **Data View** button near the top of the portal and 
-selecting the the data view you just created from the drop down menu.
+![](./img_24.png)
 
-[Screenshot of data views dropdown on map]
-
-[Link](https://data.cencoos.org/?ls=d5c72fe4-1f12-115f-6ede-fcfc17807d63#data/5)
+Here is the static link to the **Data View** we just created: <https://mbon.ioos.us/?ls=HwIUygJm#data/10>
 
 ## The Data View
 
-[Screenshot of data view]
+![](./img_25.png)
 
-There is a lot of information here, but what stands out (to me at least) is that the increases in mortality are seen at both beaches in 2009 and again in 2015.
+There is a lot of information here, lets clean up some of these figures so we can more easily interpret what's going on.
 
-**Now let’s add some SST data**
+For the **Comparison chart** you can add/remove the various statistics presented on the chart by clicking **Legend** and 
+checking/unchecking the desired statistics. Notice how the comparison chart adds/removes those statistics as you check/uncheck 
+the boxes. Lets remove the **Seasonal statistics** and the Observations **min/max envelope**.
 
-Now the mortality following the Blob really stands out, as well as the seasonality of carcass deposition.
+![](./img_26.png)
 
-[Screenshot of timeseries, highlighting blob]
+You can also adjust the **time bin** to appropriately bin the observations through time.
 
-Here we can see just how warm the winter months of in 2014. We can also visualize SST as an anomaly or climatology (these are really pseudo-climatologies)
+![](./img_27.png)
 
-[GIF of SST timeseries - changing anomoly/climatology]
+After cleaning up the statistics and appropriately binning the observations, our **Data View** should look like this:
+
+![](./img_28.png)
+
+ What stands out (to me at least) is that the increases in mortality are seen at both beaches in 2009 and again in 2015.
+
+THIS DOESNT MAKE SENSE - WHAT CAN WE SAY ABOUT WHAT WE'RE SHOWING IN THE FIGURE ABOVE
+
+
+**Now let’s look at the SST data**
+
+The mortality following the 2015 Warm Blob really stands out, as well as the seasonality of carcass deposition.
+
+![](./img_29.png)
+
+
+Let's see just how warm the winter months of 2014 were. In the **Saved Charts** section of the **Data View** we can also 
+visualize SST as an anomaly or annual averages. Adjust the **Chart** to `Annual averages` and set the **Year** to `2015` 
+
+![](./img_30.png)
+
+Now, adjust the **Chart** to `Anomaly` and use your cursor to zoom into `2015`. Notice how warm 2015 was!
+
+![](./img_31.png)
+
+Go back to the **Comparison Chart** and adjust the time slider to only show data from 2015.
+
+![](./img_32.png)
+
+Here is the static link to the **Data View** we just created: <https://mbon.ioos.us/?ls=HwIUygJm#data/10>
 
 ## Finally: The Feedback Button
-If you are having any trouble, something doesn't look right, or really anything else. Please use the feedback button in 
+If you are having any trouble, something doesn't look right, or really anything else. Please use the **feedback** button in 
 the top right of the portal. This button will send us a link to what you are looking at and help us figure out what is 
 going on. It's also a great way for us to log suggestions, so if there is something you would like to see, we want to 
 hear it!
 
-[Screenshot of Feedback button]
+![](./img_33.png)
 
 ## Appendix: Using the Real-time Sensor Layer
 The colors that you see on the map correspond to a different parameter being measured at a given location. By default we 
-are seeing **Air Temperature** and the color corresponds to the most recent value (gray if no values have reported in 24 hours.
+are seeing **Air Temperature** and the color corresponds to the most recent value (gray if no values have reported in 24 hours).
 Hovering over a circle will give us more information about the data stream and show some recent data.
 
-[Screenshot of picking a point from map]
- 
+![](./img_34.png)
+
+Here is the link to the **Map View** with the Global Sensors layer added: <https://mbon.ioos.us/?ls=p4ZhOW1_#map>
+
 ## Appendix: Advanced Filtering
 The portal has multiple ways to filter data: by time, by taxonomy, by collection group and more.
-In the Legend box select plus sign on the **Advanced Icon**. This will expand the filtering options.
+In the **Legend** box select plus sign on the **Advanced Icon**. This will expand the filtering options.
 
-[Screenshot of bird carcass advanced options]
+![](./img_35.png)
 
 Now let’s select **BeachCOMBERS** from the **Organization Drop down Menu**.
 
-[Screenshot of organization dropdown]
-
 Now if you zoom out on the map you will notice that it is only showing data collected by BeachCOMBERS.
 
+![](./img_36.png)
 
+Here is the link to the **Data View** of the **Bird Carcasses** data layer, filtered by **Organization** of `Beach Combers`: <https://mbon.ioos.us/?ls=n62ES453#map>
