@@ -102,3 +102,12 @@ entries:
     - title: 'Gulf of Maine Wilkinson Basin Time Series Station Calanus Abundance Observations'
       url: /use-case.html#gulf-of-maine-wilkinson-basin-time-series-station-calanus-abundance-observations
       output: web
+  - title: "MBON Data Portal Demo"
+    output: web
+    folderitems:
+      - title: "Overview"
+        url: /data-portal-demo.html
+        output: web
+      - title: "Open the Data Portal"
+        url: /data-portal-demo.html#open-the-data-portal
+        output: web
