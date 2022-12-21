@@ -40,10 +40,43 @@ Scientific Name, Common Name, Taxon Rank for all species or at higher level if a
 **Keyword List:** <br/>
 
 ## Associated Parties
-_Note: Abby will be listed as the publisher if she loads the data into the IPT for you and publishes to GBIF and/or OBIS_
+
+All MBON affiliated datasets should include, at least, one **Associated Party** which is affiliated with `US MBON`.
+This allows OBIS to create an institute page which reflects `US MBON`'s contributions (similar to SCB 
+MBON <https://obis.org/institute/19534>). This is possible because `US MBON` has an OceanExpert institution (<https://oceanexpert.org/institution/23070>)
+which will link the various datasets together in an institute page. _To create an **OceanExpert** institution, follow the 
+[Appendix: How-to Create an OceanExpert Institution](#appendix-how-to-create-an-oceanexpert-institution)._
 
 **Associated Party (include First Name, Last Name, Position, Organization, Email, can link to ORCID):** <br/>
-**Associated Party Role (pick one per person):** Author, Content Provider, Custodian Steward, Distributor, Editor, Metadata Provider, Originator, Owner, Point of Contact, Principal Investigator, Processor, Publisher, User, Programmer, Curator, Reviewer <br/>
+**Associated Party Role (pick one per person from table below):** <br/>
+_`Role` information is also available at <https://ipt.gbif.org/manual/en/ipt/latest/manage-resources#associated-parties>._
+
+| **Role**              | **Description**                                                                                                                                                                                           
+|:----------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| author                | an agent who is an author of a publication that used the dataset, or author of a data paper                                                                                                           
+| contentProvider       | an agent who contributed content to a dataset (the dataset being described may be a composite)                                                                                                        
+| custodianSteward      | an agent who is responsible for/takes care of the dataset                                                                                                                                             
+| distributor           | an agent involved in the publishing/distribution chain of a dataset                                                                                                                                   
+| editor                | an agent associated with editing a publication that used the dataset, or a data paper                                                                                                                 
+| metadataProvider      | an agent responsible for providing the metadata                                                                                                                                                       
+| originator            | an agent who originally gathered/prepared the dataset                                                                                                                                                 
+| owner                 | an agent who owns the dataset (may or may not be the custodian)                                                                                                                                       
+| pointOfContact        | an agent to contact for further information about the dataset                                                                                                                                         
+| principalInvestigator | a primary scientific contact associated with the dataset                                                                                                                                              
+| processor             | an agent responsible for any post-collection processing of the dataset                                                                                                                                
+| publisher             | the agent associated with the publishing of some entity (paper, article, book, etc) based on the dataset, or of a data paper                                                                          
+| user                  | an agent that makes use of the dataset                                                                                                                                                                
+| programmer            | an agent providing informatics/programming support related to the dataset                                                                                                                             
+| curator               | an agent that maintains and documents the specimens in a collection. Some of their duties include preparing and labeling specimens so they are ready for identification, and protecting the specimens 
+| reviewer              | person assigned to review the dataset and verify its data and/or metadata quality. This role is analogous to the role played by peer reviewers in the scholarly publication process.                  
+
+_Note: Abby will be listed as the `publisher` if she loads the data into the IPT for you and publishes to GBIF and/or OBIS_
+
+For previously submitted data, an additional **Affiliated Party** with the role of `contentProvider`, which cites the 
+`US MBON` institution, will be added. The person's information (name, email, etc.) will be duplicated from the existing
+**Affiliated Party** with the role of `metadataProvider`.
+
+
 
 ## Project Data
 _If including this section Title and Project Personnel are required_
@@ -84,3 +117,23 @@ _If including this section Study Extent, Sampling Description, Step Description 
 **Maintenance Description:** <br/>
 **Additional Information:** <br/>
 **Alternative Identifiers:** <br/>
+
+## Appendix: How to create an OceanExpert institution
+
+Before creating a new institution it's always good to first do a search to make sure your institution doesn't already 
+exist in **OceanExpert**. You can search for institutions at <https://oceanexpert.org/advancedSearch>. Be sure to check 
+various spellings and acronyms too!
+
+To create an **OceanExpert** institution:
+1. Create an **OceanExpert** account: <https://oceanexpert.org/register>
+2. Once your account is created, log in and edit your profile:<br> 
+![image](https://user-images.githubusercontent.com/8480023/207622140-89c3bbb5-1abd-4058-809b-8434635bfa54.png)
+3. In the **Affiliation and Address** section of the profile there is a dropdown menu for `Organisation/Institution/Company`, select the first option `Cannot find my Institute - Create New`: <br>
+![image](https://user-images.githubusercontent.com/8480023/207622420-52592ce2-bda7-4ba4-a40a-47417ca6bca7.png)
+4. A new window will pop up and ask you to populate a new institution record:<br> 
+![image](https://user-images.githubusercontent.com/8480023/207622801-e395e6af-dd61-4247-a865-b5a86dcaf787.png)
+   1. The only required fields are: `Name`, `Type` (choose from Academic, Government, International / Intergovernmental, NGO, Private Commercial, Private non-profit, and Research), `Address`, `Zip Code`, and `City`.
+5. Click **Add Institution**.
+6. That should add the institution to the drop down list for `Organisation/Institution/Company` so that you can associate it with your profile.
+
+To edit **OceanExpert** institution pages, send an email to <mailto:info@oceanexpert.org> with the requested changes.
