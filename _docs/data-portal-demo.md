@@ -67,7 +67,9 @@ well as a link to the ISO metadata record for those who want to dive deeper.
 
 Link to dataset metadata and layers: <https://mbon.ioos.us/#module-metadata/89c64bd6-c1e2-4cc9-bdbf-2efa61586b50>
 
-## Navigating the Map Layer (Click on the Map Button) 
+## Navigating the Map Layer
+Click on the Map Button.
+
 Here we can visualize many types of data both spatially and temporally. 
 
 Each different dataset is called a **Layer**. 
