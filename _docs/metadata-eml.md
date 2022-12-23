@@ -72,9 +72,9 @@ _`Role` information is also available at <https://ipt.gbif.org/manual/en/ipt/lat
 
 _Note: Abby will be listed as the `publisher` if she loads the data into the IPT for you and publishes to GBIF and/or OBIS_
 
-For previously submitted data, an additional **Affiliated Party** with the role of `contentProvider`, which cites the 
+For previously submitted data, an additional **Associated Party** with the role of `distributor`, which cites the 
 `US MBON` institution, will be added. The person's information (name, email, etc.) will be duplicated from the existing
-**Affiliated Party** with the role of `metadataProvider`.
+**Associated Party** with the role of `metadataProvider`.
 
 
 
