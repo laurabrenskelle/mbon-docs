@@ -96,8 +96,7 @@ Now let’s go back to the map by clicking on **Map** button.
 
 It looks very busy, so let’s go over how to use the **Map**.
 
-Currently, we have two data Layers loaded up. First the **bird carcass** layer and the **Global sensors** layer, which is 
-loaded by default (See [Appendix for how to use this layer](#appendix-using-the-real-time-sensor-layer)).
+Currently, we have two data Layers loaded up. First the **bird carcass** layer and the **Global sensors** layer (See [Appendix for how to use this layer](#appendix-using-the-real-time-sensor-layer)).
 
 In the meantime, let’s hide this layer. 
 
@@ -113,7 +112,7 @@ will re-enable the layer.
 Zooming in the portal can be accomplished a couple of different ways:
 1. The Plus and Minus Buttons
 2. The Magnification Tool: Drag a rectangle over the region that you want to zoom to.
-3. Zoom in/out with a scro11 whee1 or by doub1e c1icking on a region.
+3. Zoom in/out with a scroll wheel or by doub1e clicking on a region.
 
 Now that that is done, we should only be able to see **Seabird Carcass** surveys. Each color corresponds to a survey site.
 
@@ -192,8 +191,6 @@ also display the data for each month (the raw values) or by the season.
 Click on the **Time Bin** pull down and select **Months**.
 
 ![](./img_18.png)
-
-Adding 
 
 From this plot a couple of things stand out:
 1. There is a seasonal signal to Seabird Deposition - Fall and Summer tend to have higher deposition than Winter and Spring
@@ -283,10 +280,6 @@ You can also adjust the **time bin** to appropriately bin the observations throu
 After cleaning up the statistics and appropriately binning the observations, our **Data View** should look like this:
 
 ![](./img_28.png)
-
- What stands out (to me at least) is that the increases in mortality are seen at both beaches in 2009 and again in 2015.
-
-THIS DOESNT MAKE SENSE - WHAT CAN WE SAY ABOUT WHAT WE'RE SHOWING IN THE FIGURE ABOVE
 
 
 **Now let’s look at the SST data**
