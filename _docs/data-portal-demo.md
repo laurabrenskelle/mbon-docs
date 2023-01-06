@@ -73,8 +73,6 @@ Here we can visualize many types of data both spatially and temporally.
 
 Each different dataset is called a **Layer**. 
 
-By default, the real-time sensors data layer will be displayed. IS THIS TRUE??
-
 ![](./img_3.png)
 
 There is a lot going on here! Let’s focus on the blue **Navigation Header** at the top of the portal.
