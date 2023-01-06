@@ -37,7 +37,6 @@ Note: The data portal works best using the Firefox and Chrome web browsers.
 The MBON Data Portal can be accessed by going to <https://mbon.ioos.us> The portal has three main components:
 1. The Map Layer
 2. The Data Catalog (which can also be accessed in the Map Layer)
-3. The Glider Visualizer (which we are not going to cover today)
 
 To get to the **Catalog Layer** click on the **Search 270+ Datasets** button.
 
