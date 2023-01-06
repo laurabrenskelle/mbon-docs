@@ -116,7 +116,7 @@ Zooming in the portal can be accomplished a couple of different ways:
 2. The Magnification Tool: Drag a rectangle over the region that you want to zoom to.
 3. Zoom in/out with a scroll wheel or by doub1e clicking on a region.
 
-Now that that is done, we should only be able to see **Seabird Carcass** surveys. Each color corresponds to a survey site.
+Now that that is done, we should only be able to see **Seabird Carcass** surveys. Each dot on the map corresponds to a survey site.
 
 ![](./img_7.png)
 
@@ -163,7 +163,7 @@ Link to **Map View** filtered by `gull`: <https://mbon.ioos.us/?ls=_f6KAdsb#map>
 
 ## Polygon Selection
 
-Select the polygon icon on the right-hand side of the page.
+Select the polygon icon on the left-hand side of the page.
 
 ![](./img_14.png)
 
