@@ -80,14 +80,15 @@ There is a lot going on here! Let’s focus on the blue **Navigation Header** at
 
 ![](./img_4.png)
 
-**There are seven Tabs here**:
-1. **Catalog** - This takes us to the Data Catalog
-2. **Map** -This will take us to the Catalog entry for a loaded data layer
-3. **Data Views** -These are collections on plots from different Data Layers (we'll come back to this soon) 
-4. **Settings** - Here you can change things like the Units and color schemes 
-5. **Share** -This will generate a unique link to what you are currently seeing in the portal. This can be shared with others or used to regenerate the portal in its current state. 
-6. **Help** - Here you find links to the help documents and an interactive guide to the portal 
-7. **Feedback** -This is a great way to report bugs, ask questions, or open a line of communication with us! We track all of the feedback and appreciate any comments.
+**There are nine Tabs here**:
+1.**Home** - This takes you to the MBON Data Portal home page.
+2. **Catalog** - This takes you to the Data Catalog.
+3. **Map** -This will take you to the Map viewer. If any datasets have been added to the map, they will appear. 
+4. **Data Views** -These are collections of plots from different Data Layers (we'll come back to this soon).
+5. **Settings** - Here you can change things like the Units, color schemes, base layers for the map, and many other options.
+6. **Share** -This will generate a unique url to what you are currently seeing in the portal. This can be shared with others or used to regenerate the portal in its current state. 
+7. **Help** - Here you find links to the help documents and an interactive guide to the portal 
+8. **Feedback** -This is a great way to report bugs, ask questions, or open a line of communication with us! We track all of the feedback and appreciate any comments.
 
 ## Exploring the Data 
 Now let’s go back to the map by clicking on **Map** button.
