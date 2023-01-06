@@ -34,7 +34,7 @@ _Note: If you get lost or want to skip ahead, there are links to the portal alon
 ## Open the Data Portal
 Note: The data portal works best using the Firefox and Chrome web browsers. 
 
-The MBON Data Portal can be accessed by going to <https://mbon.ioos.us> The portal has three main components:
+The MBON Data Portal can be accessed by going to <https://mbon.ioos.us> The portal has two main components:
 1. The Map Layer
 2. The Data Catalog (which can also be accessed in the Map Layer)
 
