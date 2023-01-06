@@ -201,7 +201,7 @@ From this plot a couple of things stand out:
    2. 2007: Starvation event
    3. 2015: The Blob: Marine Heatwave
 
-Link to **Map View** with polygon selected: <https://mbon.ioos.us/?ls=jsiGoOod#map>
+Link to **Map View** with polygon selected: <https://mbon.ioos.us/?ls=BGIvnsro#map>
 
 ## Adding/Comparing Sea Surface Temperature
 Let's add the SST layer as measured from Satellites.
