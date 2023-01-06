@@ -212,14 +212,10 @@ selecting the **Find Data** next to the **Legend** in the Map Layer.
 Now let’s search for `SST` and add the **GHRSST Level 4 MUR Global Foundation Sea Surface Temperature Analysis (.01deg/1km)** 
 layer by selecting the blue cross next to the name.
 
-[GIF of searching in map]
-
 ![](./img_19.png)
 
 Now let’s create a **time series of SST in the middle of Monterey Bay**. This is done by creating a virtual sensor, a 
 tool that extracts a time series at a single point out of a spatial dataset. This make take a second to load. 
-
-[GIF adding SST to map]
 
 ![](./img_20.png)
 
