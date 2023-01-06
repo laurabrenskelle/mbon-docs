@@ -139,8 +139,8 @@ Link to **Map View** with `bird carcass` layer loaded: <https://mbon.ioos.us/?ls
 ## Filtering Data 
 The portal has multiple ways to filter data: by time, by taxonomy, by collection group and more. 
 
-In the Legend box select plus sign on the **Species (common name)** drop-down menus. This will give a list of the common 
-names of different birds that were identified.
+In the Legend box select plus sign next to **Attribute** and open up the **Species (common name)** drop-down menus. 
+This will give a list of the common names of different birds that were identified.
 
 ![](./img_11.png)
 
