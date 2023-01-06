@@ -231,11 +231,12 @@ Link to **Map View** with SST virtual station selected: <https://mbon.ioos.us/?l
 
 _Note: If continuing from above, you will need to click the eyeball icon on the SST layer to **hide layer**._
 
-Now we can create a **Data View** to view multiple types of data on the same page. The first **data view** will compare two beaches.
+Now we can create a **Data View** to view multiple types of data on the same page. The first **Data View** will compare 
+`Common Murre` mortality events with `SST`.
 1. **Filter** the `Bird Carcasses` layer for `Common Murre`
 2. Use the **polygon selection** to select the Monterey Bay region.
 3. In the time series window, Select the **Measurement** of `counts per effort per km`
-4. Create a new Data View by selecting the Blue Star button. Then select the Plus sign to create a new data view. Give it 
+4. Create a new **Data View** by selecting the Blue Star button. Then select the Plus sign to create a new **Data View**. Give it 
 a name (we named it `Monterey Beaches` in the screenshot below).
 
    Then a check the two boxes to **Save to data view** and **Add to compare chart**
@@ -257,7 +258,7 @@ selecting the data view you just created from the drop down menu (`Monterey Beac
 
 ![](./img_24.png)
 
-Here is the static link to the **Data View** we just created: <https://mbon.ioos.us/?ls=HwIUygJm#data/10>
+Here is the static link to the **Data View** we just created: <https://mbon.ioos.us/#data/10>
 
 ## The Data View
 
