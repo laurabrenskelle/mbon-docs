@@ -81,7 +81,7 @@ There is a lot going on here! Let’s focus on the blue **Navigation Header** at
 ![](./img_4.png)
 
 **There are nine Tabs here**:
-1.**Home** - This takes you to the MBON Data Portal home page.
+1. **Home** - This takes you to the MBON Data Portal home page.
 2. **Catalog** - This takes you to the Data Catalog.
 3. **Map** -This will take you to the Map viewer. If any datasets have been added to the map, they will appear. 
 4. **Data Views** -These are collections of plots from different Data Layers (we'll come back to this soon).
