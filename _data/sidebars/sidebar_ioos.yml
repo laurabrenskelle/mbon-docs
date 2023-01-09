@@ -148,5 +148,5 @@ entries:
         url: /data-portal-demo.html#appendix-advanced-filtering
         output: web
       - title: "Appendix: MBON Data View Challenge"
-        url: /data-portal-demo.html##appendix-mbon-data-view-challenge
+        url: /data-portal-demo.html#appendix-mbon-data-view-challenge
         output: web
