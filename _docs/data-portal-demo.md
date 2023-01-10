@@ -338,8 +338,8 @@ Here is the link to the **Data View** of the **Bird Carcasses** data layer, filt
 
 Concept:
 
-* Challenging MBON network members to engage with the Portal and its tools to draft a demo Curated Data View for time series integration, and/or custom URL map view.
-* Encourage all MBON network members at all levels to engage and understand the potential for Portal use, and well as understanding its limitations and guiding future work.
+* Challenging partners to engage with the Portal and its tools to draft a demo Curated Data View for time series integration, and/or custom URL map view.
+* Encourage all partners at all levels to engage and understand the potential for Portal use, and well as understanding its limitations and guiding future work.
 * Challenge concepts can take as little as ~30 min to an hour or more to develop depending on background, intent and more. 
 * No programming or specialist computer skills are required!
 
@@ -347,6 +347,6 @@ Process:
 
 * The concepts and background materials will be presented at the MBON DMAC meeting on 10 January 2023 (materials above).
 * A follow-up ‘drop-in’ session will occur on January 24th from 3-4pm ET ([Google Meet Link](https://meet.google.com/ufo-fitm-aan)) as a basic Q&A to help folks who might have questions or need help as they develop a concept.
-* We will close out the challenge during the next MBON DMAC WG meeting on February 14th 2023, where people can introduce their concept and discuss issues arising such as strengths/weakness and informing future work.
+* We will close out the challenge during the next MBON DMAC WG meeting on February 14th 2023, where participants can introduce their concept and discuss issues arising such as strengths/weakness and informing future work.
 
 To submit your final Data View, use the **Share** button at the top of the portal and send the link to [Mathew Biddle](mailto:mathew.biddle@noaa.gov) by **February 14th, 2023**.
