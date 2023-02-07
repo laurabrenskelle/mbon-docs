@@ -4,8 +4,8 @@ on:
   push:
      branches: 
        - gh-pages
-  schedule:
-    - cron: "35 16 * * *" # run daily at noon
+#   schedule:
+#     - cron: "35 16 * * *" # run daily at noon
 
 jobs:
   scheduled:
