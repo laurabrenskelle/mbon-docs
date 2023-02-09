@@ -24,6 +24,7 @@ jobs:
           
       - name: Update theme from submodules
         run: | 
+          git submodule set-branch --branch navbars _data/navbars_theme
           git submodule sync --recursive
           git submodule update --remote
 
