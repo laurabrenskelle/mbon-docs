@@ -20,10 +20,8 @@ jobs:
 
       - name: Update theme from submodules
         run: | 
-          cd theme/
-          git pull
-          cd ../_data/navbars_theme/
-          git pull
+          git submodule sync
+          git submodule update --remote
 
       - name: Commit and push if it changed
         run: |
