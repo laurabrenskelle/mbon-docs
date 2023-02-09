@@ -18,6 +18,10 @@ jobs:
         with:
           submodules: true
 
+      - name: check submodule status
+        run: |
+          git submodule status
+          
       - name: Update theme from submodules
         run: | 
           git submodule sync
