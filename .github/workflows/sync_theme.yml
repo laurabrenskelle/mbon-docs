@@ -20,8 +20,7 @@ jobs:
 
       - name: Update theme from submodules
         run: | 
-          git submodule update --init --recursive
-          git submodule update --recursive --remote
+          git submodule update --remote
 
       - name: Commit and push if it changed
         run: |
