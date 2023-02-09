@@ -16,12 +16,12 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
-          submodules: recursive
+          submodules: true
 
       - name: Update theme from submodules
         run: | 
-          git submodule update --remote --merge
-          git diff
+          git submodule update --init --recursive
+          git submodule update --recursive --remote
 
       - name: Commit and push if it changed
         run: |
