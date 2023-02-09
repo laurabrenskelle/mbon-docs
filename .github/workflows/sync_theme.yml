@@ -15,8 +15,13 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
-        with:
-          submodules: true
+ #       with:
+ #         submodules: true
+ 
+      - name: submodule checkout
+        run: |
+          git submodule update --init
+          git submodule update --remote --merge
 
       - name: check submodule status
         run: |
