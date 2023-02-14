@@ -41,12 +41,11 @@ Scientific Name, Common Name, Taxon Rank for all species or at higher level if a
 
 ## Associated Parties
 
-All `US MBON` affiliated datasets should include, at least, one **Associated Party** which is affiliated with `US MBON`.
-This allows OBIS to create an institute page which reflects `US MBON`'s contributions (similar to SCB 
-MBON <https://obis.org/institute/19534>). 
+All `US MBON` affiliated datasets should include, at least, one **Associated Party** which is affiliated with `US MBON`. This allows OBIS to create an institute page which reflects `US MBON`'s contributions (similar to SCB MBON <https://obis.org/institute/19534>). This is possible because `US MBON` has an OceanExpert institution which will link the various datasets together in an institute page.
 
-This is possible because `US MBON` has an OceanExpert institution (<https://oceanexpert.org/institution/23070>)
-which will link the various datasets together in an institute page (<https://obis.org/institute/23070>). 
+
+US MBON Ocean Expert Institution: <https://oceanexpert.org/institution/23070> <br/>
+US MBON OBIS Institution:         <https://obis.org/institute/23070>
 
 _To create an **OceanExpert** institution, follow the 
 [Appendix: How-to Create an OceanExpert Institution](#appendix-how-to-create-an-oceanexpert-institution)._
