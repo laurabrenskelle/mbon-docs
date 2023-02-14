@@ -21,17 +21,17 @@ jobs:
       - name: submodule checkout
         run: |
           git submodule update --init
-          git submodule update --remote --merge
+          #git submodule update --remote --merge
 
       - name: check submodule status
         run: |
           git submodule status
           
-      - name: Update theme from submodules
-        run: | 
-          git submodule set-branch --branch navbars _data/navbars_theme
-          # git submodule sync --recursive
-          git submodule update --remote
+#       - name: Update theme from submodules
+#         run: | 
+#           git submodule set-branch --branch navbars _data/navbars_theme
+#           # git submodule sync --recursive
+#           git submodule update --remote
 
       - name: Commit and push if it changed
         run: |
