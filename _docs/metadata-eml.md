@@ -43,8 +43,12 @@ Scientific Name, Common Name, Taxon Rank for all species or at higher level if a
 
 All `US MBON` affiliated datasets should include, at least, one **Associated Party** which is affiliated with `US MBON`.
 This allows OBIS to create an institute page which reflects `US MBON`'s contributions (similar to SCB 
-MBON <https://obis.org/institute/19534>). This is possible because `US MBON` has an OceanExpert institution (<https://oceanexpert.org/institution/23070>)
-which will link the various datasets together in an institute page (<https://obis.org/institute/23070>). _To create an **OceanExpert** institution, follow the 
+MBON <https://obis.org/institute/19534>). 
+
+This is possible because `US MBON` has an OceanExpert institution (<https://oceanexpert.org/institution/23070>)
+which will link the various datasets together in an institute page (<https://obis.org/institute/23070>). 
+
+_To create an **OceanExpert** institution, follow the 
 [Appendix: How-to Create an OceanExpert Institution](#appendix-how-to-create-an-oceanexpert-institution)._
 
 **Associated Party (include First Name, Last Name, Position, Organization, Email, can link to ORCID):** <br/>
@@ -70,13 +74,9 @@ _`Role` information is also available at <https://ipt.gbif.org/manual/en/ipt/lat
 | curator               | an agent that maintains and documents the specimens in a collection. Some of their duties include preparing and labeling specimens so they are ready for identification, and protecting the specimens 
 | reviewer              | person assigned to review the dataset and verify its data and/or metadata quality. This role is analogous to the role played by peer reviewers in the scholarly publication process.                  
 
-_Note: Abby will be listed as the `publisher` if she loads the data into the IPT for you and publishes to GBIF and/or OBIS_
+_Note: Abby Benson will be listed as the `publisher` if she loads the data into the IPT for you and publishes to GBIF and/or OBIS_
 
-For previously submitted data, an additional **Associated Party** with the role of `distributor`, which cites the 
-`US MBON` institution, will be added. The person's information (name, email, etc.) will be duplicated from the existing
-**Associated Party** with the role of `metadataProvider`.
-
-
+_Note: Mathew Biddle will be listed as the `distributor` with `US MBON` as the institution._
 
 ## Project Data
 _If including this section Title and Project Personnel are required_
