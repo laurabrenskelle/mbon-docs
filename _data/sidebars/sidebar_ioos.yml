@@ -93,6 +93,42 @@ entries:
     - title: "Overview"
       url: /metadata-eml.html
       output: web
+    - title: "Geographic Coverage"
+      url: /metadata-eml.html#geographic-coverage
+      output: web
+    - title: "Taxonomic Coverage"
+      url: /metadata-eml.html#taxonomic-coverage
+      output: web
+    - title: "Temporal Coverage"
+      url: /metadata-eml.html#temporal-coverage
+      output: web
+    - title: "Keywords"
+      url: /metadata-eml.html#keywords
+      output: web
+    - title: "Associated Parties"
+      url: /metadata-eml.html#associated-parties
+      output: web
+    - title: "Project Data"
+      url: /metadata-eml.html#project-data
+      output: web
+    - title: "Sampling Methods"
+      url: /metadata-eml.html#sampling-methods
+      output: web
+    - title: "Citations"
+      url: /metadata-eml.html#citations
+      output: web
+    - title: "Collection Data"
+      url: /metadata-eml.html#collection-data
+      output: web
+    - title: "External Links"
+      url: /metadata-eml.html#external-links
+      output: web
+    - title: "Additional Metadata"
+      url: /metadata-eml.html#additional-metadata
+      output: web
+    - title: "Appendix: How to create an OceanExpert institution"
+      url: /metadata-eml.html#appendix-how-to-create-an-oceanexpert-institution
+      output: web
   - title: "MBON use case"
     output: web
     folderitems:
