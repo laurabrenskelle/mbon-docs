@@ -1,13 +1,18 @@
 name: Sync theme with submodules
 
 on:
+  push:
+    branches: gh-pages
+    
   schedule:
      - cron: "10 17 * * *" # run daily at noon
+     
   workflow_dispatch:
+
 
 jobs:
   scheduled:
-    if: ${{ github.repository_owner }} == 'ioos' # only run if ioos owns repo
+    if: github.repository_owner == 'ioos' # only run if ioos owns repo
     runs-on: ubuntu-20.04
     steps:
     - name: Checkout repo
@@ -16,7 +21,6 @@ jobs:
     - name: submodule checkout
       run: |
            git submodule update --init
-
     - name: check submodule status
       run: |
           git submodule status
@@ -28,7 +32,6 @@ jobs:
     - name: check submodule status 2
       run: |
            git submodule status
-
     - name: Commit and push if it changed
       run: |
            git config user.name "Automated"
