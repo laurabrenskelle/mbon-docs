@@ -7,7 +7,7 @@ on:
 
 jobs:
   run_if_ioos:
-    if: contains(GITHUB_REPOSITORY_OWNER, 'ioos')
+    if: contains($GITHUB_REPOSITORY_OWNER, 'ioos')
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout repo
