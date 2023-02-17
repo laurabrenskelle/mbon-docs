@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: 'print pwd if repo owner == ioos'
-        if: ${{ github.repository.owner == 'ioos' }}
-        run: pwd
+        if: ${{ github.repository.owner }} == 'ioos'
+        run: echo ${{ github.repository.owner }}
 
 #      - name: Checkout repo
 #        uses: actions/checkout@v3
