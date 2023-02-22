@@ -1,34 +1,32 @@
-name: Sync theme with submodules
+name: sync theme submodules
 
 on:
   push:
     branches: gh-pages
-    
+
   schedule:
-     - cron: "10 17 * * *" # run daily at noon
-     
+     - cron: "00 14 * * *"
+
   workflow_dispatch:
 
 
 jobs:
-  scheduled:
+  sync_theme_submodules:
     if: github.repository_owner == 'ioos' # only run if ioos owns repo
     runs-on: ubuntu-20.04
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
- 
+
     - name: submodule checkout
       run: |
            git submodule update --init
     - name: check submodule status
       run: |
           git submodule status
-          
     - name: Update theme from submodules
-      run: | 
+      run: |
            git submodule update --remote --merge
-          
     - name: check submodule status 2
       run: |
            git submodule status
