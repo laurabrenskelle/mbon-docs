@@ -12,7 +12,7 @@ summary: This page contains the working group charter for the MBON Data Manageme
 | Description                     | Date       |
 |---------------------------------|------------| 
 | Initial creation in Google Doc. | 2021-05-11 |
-| Migrated content to GitHub.     | 2023-02-28 |
+| Migrated content to website.    | 2023-02-28 |
 
 
 ## Working Group Purpose
