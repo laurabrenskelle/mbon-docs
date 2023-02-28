@@ -26,10 +26,13 @@ entries:
     url: /index.html
     folderitems:
     - title: "Introduction"
-      url: /index.html#introduction
+      url: /index.html
       output: web
     - title: "Categories of MBON observations"
       url: /index.html#categories-of-mbon-observations
+      output: web
+    - title: "Working Group Charter"
+      url: /working-group-charter.html
       output: web
 
 
