@@ -7,6 +7,14 @@ toc: false
 summary: This page contains the working group charter for the MBON Data Management and Cyberinfrastructure Working Group (MBON DMAC WG).
 ---
 
+### Document History
+
+| Description                     | Date       |
+|---------------------------------|------------| 
+| Initial creation in Google Doc. | 2021-05-11 |
+| Migrated content to GitHub.     | 2023-02-28 |
+
+
 ## Working Group Purpose
 
 The MBON Data Management and Cyberinfrastructure Working Group (MBON DMAC WG) seeks to identify strategies for interoperability and effective use of biodiversity observations.  The purpose of this working group is to implement interoperability, data archival, and publication standards for marine and coastal biodiversity observations. Quantifying biodiversity requires observations of the types, abundance, age structure, productivity, and phenology of communities of organisms, including migration patterns and interactions between these organisms. Types of organisms and the make-up of the biological community may be quantified by traditional taxonomy, genetics, by quantifying traits (color, size, sound emissions, behavior), chemical proxies (pigment composition, nutritional value), and other physical characteristics (sound and light scattering and absorption, association with different substrates).
