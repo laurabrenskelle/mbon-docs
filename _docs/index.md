@@ -9,18 +9,9 @@ summary: This documentation describes the Marine Biodiversity Observation Networ
 
 ## Introduction
 
-[Marine Biodiversity Observation Network (MBON)](https://marinebon.org) 
-observation data is focused on organisms from microbes to whales, including measures of biodiversity 
-(e.g. presence, abundance), productivity, genomics, phenology, and other relevant ecological process 
-measurements or indices. Also featured are habitat characterization and habitat diversity measures, 
-including satellite data and added-value data derived from satellite observations, and neural network 
-model results, such as biogeographical seascape classifications.
+[Marine Biodiversity Observation Network (MBON)](https://marinebon.org) observation data is focused on organisms from microbes to whales, including measures of biodiversity (e.g. presence, abundance), productivity, genomics, phenology, and other relevant ecological process measurements or indices. Also featured are habitat characterization and habitat diversity measures, including satellite data and added-value data derived from satellite observations, and neural network model results, such as biogeographical seascape classifications.
 
-The data have been generated within the MBON regions of the Arctic, Central California, Southern 
-California, the Gulf of Maine, the Pacific Northwest, and South Florida. Data have been collected 
-by associated scientists or provided by multiple other independent programs, such as the IOOS Regional 
-Associations, Long-Term Ecological Research (LTER) programs, universities, and other fisheries or marine wildlife 
-institutions.
+The data have been generated within the MBON regions of the Arctic, Central California, Southern California, the Gulf of Maine, the Pacific Northwest, and South Florida. Data have been collected by associated scientists or provided by multiple other independent programs, such as the IOOS Regional Associations, Long-Term Ecological Research (LTER) programs, universities, and other fisheries or marine wildlife institutions.
 
 This website describes the recommendations for formatting and sharing data and metadata for the MBON community. 
 
@@ -33,9 +24,7 @@ This website describes the recommendations for formatting and sharing data and m
 - Optics
 - Animal tracking
 
-The materials presented here were developed through the MBON Data Management and Cyberinfrastructure Working Group (MBON DMAC 
-WG). The working group charter can be found [here]({{ site.url }}/mbon-docs/working-group-charter.html). If you 
-would like to contribute to this documentation, see [CONTRIBUTING.md](https://github.com/ioos/mbon-docs/blob/gh-pages/CONTRIBUTING.md).
+The materials presented here were developed through the MBON Data Management and Cyberinfrastructure Working Group (MBON DMAC WG). The working group charter can be found [here]({{ site.url }}/mbon-docs/working-group-charter.html). If you would like to contribute to this documentation, see [CONTRIBUTING.md](https://github.com/ioos/mbon-docs/blob/gh-pages/CONTRIBUTING.md).
 
 ## Website contents
 - [MBON Data Flow]({{ site.url }}/mbon-docs/mbon-data-flow.html) - This is a summary of the Marine Biodiversity Observation Network (MBON) data flow.
