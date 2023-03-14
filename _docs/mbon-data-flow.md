@@ -3,7 +3,7 @@ title: "Data Flow"
 keywords: data
 tags: [biology, dataflow]
 toc: true
-summary: This is a summary of the Marine Biodiversity Observation Network (MBON) data flow.
+summary: This is a summary of the Marine Biodiversity Observation Network (MBON) data flow for Tabular data and metadata.
 ---
 
 # MBON Data Flow
