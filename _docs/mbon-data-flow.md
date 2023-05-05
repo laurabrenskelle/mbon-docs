@@ -116,7 +116,7 @@ Below are the various options for sending your data to OBIS-USA.
 
 * Attend the monthly [Standardizing Marine Biological Data Working Group](https://github.com/ioos/bio_data_guide#monthly-meetings) meeting and discuss transfer options.
 * Contribute your dataset (and code) to the `datasets/` directory in the ioos/bio_data_guide repository ([here](https://github.com/ioos/bio_data_guide/tree/main/datasets)). See the [Contribute example applications](https://github.com/ioos/bio_data_guide/blob/main/CONTRIBUTING.md#contribute-example-applications) documentation for more information.
-* Email Darwin Core aligned files to [OBIS-USA](mailto:obis-usa@usgs.gov).
+* Email Darwin Core aligned files to OBIS-USA: <obis-usa@usgs.gov>.
 * Or, use the [Dataset Review Request](https://github.com/ioos/bio_data_guide/issues/new/choose) issue to initialize the request.
 
 ## Sending to NCEI
