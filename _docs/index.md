@@ -17,7 +17,7 @@ This website describes the recommendations for formatting and sharing data and m
 
 ## Categories of MBON observations
 - Taxonomic data
--  - See the [MBON data flow](https://ioos.github.io/mbon-docs/mbon-data-flow.html) for sharing and standardizing data to Darwin Core. 
+  - See the [MBON data flow](https://ioos.github.io/mbon-docs/mbon-data-flow.html) for sharing and standardizing data to Darwin Core. 
 - Organisms abundance
   - See the [MBON data flow](https://ioos.github.io/mbon-docs/mbon-data-flow.html) for sharing and standardizing data to Darwin Core. 
 - Genetic make-up (‘omics, including informatics requirements)
