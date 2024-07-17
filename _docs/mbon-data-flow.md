@@ -8,8 +8,7 @@ mermaid: true
 ---
 
 # MBON Data Flow
-{% raw %}
-<div class="mermaid">
+```mermaid
 %%{
   init: {
     'theme': 'base',
@@ -101,8 +100,7 @@ click H "https://gbif.org" "GBIF" _blank
 click I "https://data.ioos.us" "IOOS Catalog" _blank
 click J "https://data.noaa.gov/onestop/" "NOAA OneStop" _blank
 click K "https://data.gov" "data.gov" _blank
-</div>
-{% endraw %}
+```
 
 <br />
 
