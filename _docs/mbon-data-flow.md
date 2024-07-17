@@ -8,6 +8,7 @@ mermaid: true
 ---
 
 # MBON Data Flow
+
 ```mermaid
 %%{
   init: {
