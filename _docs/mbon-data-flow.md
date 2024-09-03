@@ -4,16 +4,107 @@ keywords: data
 tags: [biology, dataflow]
 toc: true
 summary: This is a summary of the Marine Biodiversity Observation Network (MBON) data flow for Tabular data and metadata.
+mermaid: true
 ---
 
 # MBON Data Flow
-<div style="text-align: center"><img src="./MBON_Data_Flow.png" width="100" />
+
+{% raw %}
+<div class="mermaid">
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#007396',
+      'primaryTextColor': '#fff',
+      'primaryBorderColor': '#003087',
+      'lineColor': '#003087',
+      'secondaryColor': '#007396',
+      'tertiaryColor': '#CCD1D1'
+    },
+   'flowchart': { 'curve': 'basis' }
+  }
+}%%
+
+flowchart TD
+
+A["Tabular Data 
+& 
+Metadata"] 
+
+B[("Raw Data 
+Access Point
+(eg. RA ERDDAP)")]
+
+C{{"Darwin Core
+Alignment"}}
+
+D[(NCEI)]
+
+E[("IPT
+OBIS-USA")]
+
+F[/"MBON 
+Data Portal"\]
+
+G([OBIS])
+
+H([GBIF])
+
+I[("IOOS Data Catalog
+(data.ioos.us)")]
+
+J[(NOAA OneStop)]
+
+K[(data.gov)]
+
+L[("Commerce
+Data Hub")]
+
+M[/"IOC-UNESCO Harmful Algae Information System"\]
+
+N[/"Infographics"\]
+
+A --> B
+B --> C
+E --> D
+B --> D
+C --> E
+E --> G
+E --> H
+B -- If using IOOS RA ERDDAP --> I
+
+D --> FC
+I --> FC
+
+H .-> EP
+G .-> EP
+B .-> EP
+D .-> EP
+
+
+subgraph EP [Example Products]
+M
+N
+F
+end
+
+subgraph FC [Federal Catalogs]
+J
+K
+L
+end
+
+click D "https://www.ncei.noaa.gov" "NCEI" _blank
+click F "https://mbon.ioos.us" "MBON" _blank
+click G "https://obis.org" "OBIS" _blank
+click H "https://gbif.org" "GBIF" _blank
+click I "https://data.ioos.us" "IOOS Catalog" _blank
+click J "https://data.noaa.gov/onestop/" "NOAA OneStop" _blank
+click K "https://data.gov" "data.gov" _blank
 </div>
-Idealized data flow for IOOS biological observations.
-{: style="color:gray; font-size: 80%; text-align: center;"}
+{% endraw %}
 
-
-<br />
 
 For data collected/managed by an IOOS MBON project, the project should ensure data and information are readily available
 to resource managers, scientists, educators, and the public in an easily digestible way. To that end, coordination with
